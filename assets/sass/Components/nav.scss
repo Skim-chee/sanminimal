@@ -1,64 +1,54 @@
-header{
+.navbar{   
+    height: 50px;
+    top: 0;
+    width: 100%;
+    @include flexbox();
+    justify-content: center;
+    
 	//	Active nav tab
 	.nav-current a {
 		color: $pink-main;
 	}
-
-	//	Main nav bar that hides on scroll
-	&.nav-down, &.nav-up{
-		background: $white;
-		height: 50px;
-		position: fixed;
-		top: 0;
-		transition: top 0.2s ease-in-out;
-		width: 100%;	
-
-		// Divisor between navbar and content
-		&:after {
-			content: '';
-			display: block;
-			width: 95%;
-			margin: auto;	
-			border-bottom: 1px solid $gray-lt;
-		}
-
-	}
-
-	// Styles container of navbar
-	ul {
-		list-style-type: none;
+        
+    
+	//	Main nav bar 
+	.nav{
+        width: 750px;
+        @include flexbox();
+        list-style-type: none;
 		margin: 0;
 		padding: 0;
-		overflow: hidden;
-		@include flexbox();
-		justify-content: center;
+
+        // Styles individual links in navbar
+        li {
+            padding: .875rem 1.25rem;
+
+            a {
+                height: inherit;
+                width: inherit;
+                // Hovor effect of links
+                &:hover {
+                    color: $pink-main;
+                }
+            }
+        }
 	}
-	
-	// Styles individual links in navbar
-	li {
-		float: left;
-		padding: .875rem 1.25rem;
-		
-		a {
-			height: inherit;
-			width: inherit;
-			font-weight: 100;
-			color: $gray-dark;	
-		}
-		
-		// Hovor effect of links 
-		&:hover {
-			background: $pink-main;
-
-			a {
-				color: #fff;
-			}
-		}
+    
+    /************************
+    Specific nav styling    
+    ************************/
+    
+    // Make default homebutton invisible
+	.nav-home {
+		display: none;
 	}
+    
+    .nav-sight {
+        margin-right: auto;
+    }
+    
+    .nav-archive, .nav-about {
+    }
 
 
-}
-
-.nav-up {
-	top: -51px !important;
 }

@@ -1,7 +1,8 @@
 body {
-	background-color: $white;
+	background-color: $white-main;
 }
 
-.site-wrapper {
-	margin-top: 75px;
+a {
+	color: $black-main;
+	font-weight: 100;
 }

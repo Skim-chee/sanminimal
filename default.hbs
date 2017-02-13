@@ -14,7 +14,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		{{!-- Brand icon --}}
-		{{!-- <link rel="shortcut icon" href="{{asset "favicon.ico"}}"> --}}
+		<link rel="shortcut icon" href="{{asset "images/favicon.ico"}}"/>
 
 		{{!-- Scripts --}}
 		<link rel="stylesheet" type="text/css" href="{{asset "css/output.css"}}" />
@@ -26,6 +26,9 @@
 	<body class="{{body_class}}">
 
 		<div class="site-wrapper">
+            <header class = "navbar">
+	           {{navigation}}
+            </header>
 
 			{{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
 			{{{body}}}
@@ -43,9 +46,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		{{!-- Ghost outputs important scripts and data with this tag --}}
 		{{ghost_foot}}
-		{{!-- Fitvids makes video embeds responsive and awesome --}}
-		<script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
-
+		
 		<script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
 

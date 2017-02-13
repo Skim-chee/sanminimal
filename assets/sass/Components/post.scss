@@ -1,32 +1,41 @@
+.post-header{
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    
+    .blog-logo {
+        img {
+            width: 400px;
+        }
+    }
+}
 
 .post {
-	padding: 25px;
 	margin: auto;
-	width: 500px;
+	width: 550px;
 	background-color: #fff;
+    
 
+    
 	a {
-		color: $blue-main;
 	}
 	h2 {
 		margin: 0;
 		margin-bottom: 25px;
 	}
 	p {
-		color: $gray-dark;
 		font-size: 14px;
 		line-height: 25px;
+       
 	}
 	.post-date {
-		color: $blue-main;
 	}
-	
-	img {
-		width:100vw;
-		margin: 50px 0;
-		@include release();
-	}
+    
+    .cover-image {
+        img {
+            width:550px;
+            margin-top: 75px;           
+        }
+    }
 
 }
-
-
