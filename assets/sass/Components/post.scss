@@ -2,20 +2,20 @@
     position: absolute;
     left: 50%;
     margin-left: -200px;
-    
+    width: 400px;
+    @include flexbox();
+    justify-content: center;
     .blog-logo {
         img {
-            width: 400px;
+            width: 350px;
         }
     }
 }
 
 .post {
 	margin: auto;
-	width: 550px;
+	max-width: 400px;
 	background-color: #fff;
-    
-
     
 	a {
 	}
@@ -31,11 +31,29 @@
 	.post-date {
 	}
     
-    .cover-image {
+    #cover-image {
         img {
-            width:550px;
-            margin-top: 75px;           
+            width: 400px;
+            margin-top: 72px; 
+            
+            &, &:active, &:hover {
+                outline: none !important;
+            }
         }
+    }
+    #issue-info, #publication-info {
+        /* Safari */
+        -webkit-transform: rotate(90deg);
+        /* Firefox */
+        -moz-transform: rotate(90deg);
+        /* IE */
+        -ms-transform: rotate(90deg);
+        /* Opera */
+        -o-transform: rotate(90deg);
+        
+        width: 200px;
+        position: absolute;
+        font-weight: 400;
     }
 
 }

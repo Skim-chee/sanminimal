@@ -62,6 +62,9 @@ p {
 a {
 	text-decoration: none;
 }
+a, a:active, a:focus{
+        outline: none !important; /* Works in Firefox, Chrome, IE8 and above */ 
+}
 
 
 ::-webkit-scrollbar {

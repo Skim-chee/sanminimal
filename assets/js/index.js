@@ -25,3 +25,27 @@
 //
 //     }
 // }
+$(document).ready(function(){
+    if ($('#post-url').text().length > 0) {
+        var url = $('#post-url').text();
+    }
+    $('#cover-image').wrap('<a href="'+ url +'"></a>');
+    
+    function offsets(){
+        var coveroff = $('#cover-image').offset();
+            $('#issue-info').offset({
+                top : coveroff.top + $('#cover-image').outerHeight(true) - 200,
+                left :  coveroff.left + $('#cover-image').outerWidth(true) + 5
+            });
+            $('#publication-info').offset({
+                top : coveroff.top + $('#cover-image').outerHeight(true) - 150,
+                left :  coveroff.left - 25
+        });
+    }
+    offsets();
+    
+    var coverpos = $('#cover-image').position();
+    $(window).resize(function() {
+        offsets();
+    });
+});

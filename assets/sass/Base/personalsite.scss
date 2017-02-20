@@ -4,5 +4,10 @@ body {
 
 a {
 	color: $black-main;
-	font-weight: 100;
+	font-weight: 400;
+}
+
+
+#post-url {
+    display: none;
 }
