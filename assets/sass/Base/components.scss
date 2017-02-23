@@ -1,0 +1,28 @@
+body {
+	background-color: $white-main;
+}
+
+a {
+	color: $black-main;
+	font-weight: 400;
+}
+
+.container {
+    margin: auto;
+	max-width: 400px;
+}
+
+#post-url {
+    display: none;
+}
+
+#cover-image, #about-image {
+        img {
+            width: 400px;
+            margin-top: 72px; 
+            
+            &, &:active, &:hover {
+                outline: none !important;
+            }
+        }
+}

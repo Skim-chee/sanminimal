@@ -13,26 +13,13 @@
 }
 
 .post {
-	margin: auto;
-	max-width: 400px;
-	background-color: #fff;
-    	
+	
 	p {
 		font-size: 14px;
 		line-height: 25px;
        
 	}
     
-    #cover-image {
-        img {
-            width: 400px;
-            margin-top: 72px; 
-            
-            &, &:active, &:hover {
-                outline: none !important;
-            }
-        }
-    }
     #issue-info, #publication-info {
         /* Safari */
         -webkit-transform: rotate(90deg);
@@ -43,11 +30,11 @@
         /* Opera */
         -o-transform: rotate(90deg);
         
-        width: 250px;
+        width: 400px;
         position: absolute;
     }
     #issue-info {
-        font-weight: 400;
+        font-weight: 300;
         font-size: 14px;
         letter-spacing: 4px;
     }
