@@ -34,12 +34,12 @@ $(document).ready(function(){
     function offsets(){
         var coveroff = $('#cover-image').offset();
             $('#issue-info').offset({
-                top : coveroff.top + $('#cover-image').outerHeight(true) - 200,
-                left :  coveroff.left + $('#cover-image').outerWidth(true) + 5
+                top : coveroff.top + 270,
+                left :  coveroff.left + $('#cover-image').outerWidth(true) + 7
             });
             $('#publication-info').offset({
-                top : coveroff.top + $('#cover-image').outerHeight(true) - 150,
-                left :  coveroff.left - 25
+                top : coveroff.top + $('#cover-image').outerHeight(true) - 100,
+                left :  coveroff.left - 20
         });
     }
     offsets();

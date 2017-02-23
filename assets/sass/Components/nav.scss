@@ -13,7 +13,7 @@
     
 	//	Main nav bar 
 	.nav{
-        width: 950px;
+        width: 800px;
         @include flexbox();
         list-style-type: none;
 		margin: 0;
@@ -24,6 +24,9 @@
             padding: .875rem 1.25rem;
 
             a {
+                font-size: 13px;
+                letter-spacing: 6px;
+                
                 height: inherit;
                 width: inherit;
                 // Hovor effect of links

@@ -16,19 +16,11 @@
 	margin: auto;
 	max-width: 400px;
 	background-color: #fff;
-    
-	a {
-	}
-	h2 {
-		margin: 0;
-		margin-bottom: 25px;
-	}
+    	
 	p {
 		font-size: 14px;
 		line-height: 25px;
        
-	}
-	.post-date {
 	}
     
     #cover-image {
@@ -51,9 +43,18 @@
         /* Opera */
         -o-transform: rotate(90deg);
         
-        width: 200px;
+        width: 250px;
         position: absolute;
+    }
+    #issue-info {
         font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 4px;
+    }
+    #publication-info {
+        font-weight: 300;
+        font-size: 9px;
+        letter-spacing: 2px;
     }
 
 }
