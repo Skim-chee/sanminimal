@@ -15,17 +15,15 @@
       
     <!-- Hidden post url for cover image link, used by javascript -->
     <div id = "post-url">{{url}}</div>
-      
+    <div id = "issue-info">{{date format = 'MMMM YYYY'}}|no.{{this.id}}</div>
+    <div id = "publication-info">PRINTED IN NY</div>  
     <!-- Main content inserted here -->  
     {{content}}
       
     <h1 class="post-title">{{title}}</h1>
       
     <section class="post-meta">
-        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
-            {{date format="DD MMMM YYYY"}}
-        </time> 
-        {{tags prefix=" on "}}
+       
     </section>
       
   </section>     

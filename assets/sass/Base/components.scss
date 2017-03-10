@@ -30,9 +30,26 @@ a {
 /** 
 About Page
 **/
+#about-container {
+    @include flexbox();
+    justify-content: space-between;
+    height: 450px;
+    
+    #about-content {
+        position: relative;
+        width: 250px;
+        left: 0%;  
 
-#about-content {
-    position: relative;
-    width: 600px;
-    left: -25%;  
+        #about-header {
+            font-weight: 400;        
+        }
+
+    }
+    #instagram img{
+        float: right;
+        width:50px;
+    }
+  
 }
+  
+   
