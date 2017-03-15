@@ -1,0 +1,26 @@
+{{!< default}}
+
+<main role="main">
+    <div class = "container">
+		<header class="post-header">
+            <!-- Sanminimal logo, links to homepage -->
+			<a class="blog-logo" href="{{@blog.url}}"><img src="{{asset "images/Logo.svg"}}" alt="{{@blog.title}}" /></a>
+		</header>
+        
+        <div id = "about-image">
+            <img src="{{asset "images/index.jpg"}}" alt="portrait" />
+	    </div>
+        
+        <div id = "index-container">
+            {{#get "posts" limit="all"}}
+                {{#foreach posts}}
+                   
+                    <span>
+                        {{date published_at format="MMM DD, YYYY"}}:  <a href="{{url}}">{{title}}</a>
+                    </span>
+                    <br>
+                {{/foreach}}
+            {{/get}}
+        </div>
+    </div>
+</main>

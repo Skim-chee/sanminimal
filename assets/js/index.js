@@ -32,19 +32,18 @@ $(document).ready(function(){
     $('#cover-image').wrap('<a href="'+ url +'"></a>');
     
     function offsets(){
-        var coveroff = $('#cover-image').offset();
+        var coveroff = $('#cover-image, #about-image').offset();
             $('#issue-info').offset({
                 top : coveroff.top + 250,
-                left :  coveroff.left + $('#cover-image').outerWidth(true) + 8
+                left :  coveroff.left + $('#cover-image, #about-image').outerWidth(true) + 8
             });
             $('#publication-info').offset({
-                top : coveroff.top + $('#cover-image').outerHeight(true) - 100,
+                top : coveroff.top + $('#cover-image, #about-image').outerHeight(true) - 100,
                 left :  coveroff.left - 20
         });
     }
     offsets();
     
-    var coverpos = $('#cover-image').position();
     $(window).resize(function() {
         offsets();
     });

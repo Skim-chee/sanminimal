@@ -20,29 +20,4 @@
 		line-height: 25px;
        
 	}
-    
-    #issue-info, #publication-info {
-        /* Safari */
-        -webkit-transform: rotate(90deg);
-        /* Firefox */
-        -moz-transform: rotate(90deg);
-        /* IE */
-        -ms-transform: rotate(90deg);
-        /* Opera */
-        -o-transform: rotate(90deg);
-        
-        width: 400px;
-        position: absolute;
-    }
-    #issue-info {
-        font-weight: 300;
-        font-size: 14px;
-        letter-spacing: 4px;
-    }
-    #publication-info {
-        font-weight: 300;
-        font-size: 9px;
-        letter-spacing: 2px;
-    }
-
 }

@@ -5,6 +5,20 @@ body {
 a {
 	color: $black-main;
 	font-weight: 400;
+    &:hover {
+        color: $pink-main;
+    }
+}
+
+img {
+    &, &:active, &:hover {
+        outline: none !important;
+    }
+}
+
+p {
+    font-size: 13px;
+    letter-spacing: 0.75px;
 }
 
 .container {
@@ -17,15 +31,36 @@ a {
 }
 
 #cover-image, #about-image {
-        img {
-            width: 400px;
-            margin-top: 72px; 
-            
-            &, &:active, &:hover {
-                outline: none !important;
-            }
-        }
+    img {
+        width: 400px;
+        margin-top: 72px; 
+    }
 }
+
+#issue-info, #publication-info {
+        /* Safari */
+        -webkit-transform: rotate(90deg);
+        /* Firefox */
+        -moz-transform: rotate(90deg);
+        /* IE */
+        -ms-transform: rotate(90deg);
+        /* Opera */
+        -o-transform: rotate(90deg);
+        
+        width: 400px;
+        position: absolute;
+}
+#issue-info {
+        font-weight: 300;
+        font-size: 14px;
+        letter-spacing: 4px;
+}
+#publication-info {
+        font-weight: 300;
+        font-size: 9px;
+        letter-spacing: 2px;
+}
+
 
 /** 
 About Page
@@ -41,13 +76,23 @@ About Page
         left: 0%;  
 
         #about-header {
-            font-weight: 400;        
+            @include flexbox();
+            justify-content: center;
+            font-weight: 600;
+            font-size: 13px;
+            padding: 5px 0px;
+            letter-spacing: 1.3px;
+            color: $white-main;
+            background-color: $pink-main;
         }
 
     }
     #instagram img{
         float: right;
         width:50px;
+        img:hover {
+            color: $pink-main;
+        }
     }
   
 }
