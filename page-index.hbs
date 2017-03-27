@@ -3,24 +3,39 @@
 <main role="main">
     <div class = "container">
 		<header class="post-header">
-            <!-- Sanminimal logo, links to homepage -->
+<!-- Sanminimal logo, links to homepage -->
 			<a class="blog-logo" href="{{@blog.url}}"><img src="{{asset "images/Logo.svg"}}" alt="{{@blog.title}}" /></a>
 		</header>
         
-        <div id = "about-image">
+        <div class = "issue-info">{{date format = 'MMMM YYYY'}}|no.{{date format = 'D'}}</div>
+        <div class = "publication-info">PRINTED IN NY</div>
+        <div class = "cover-image">
             <img src="{{asset "images/index.jpg"}}" alt="portrait" />
 	    </div>
         
-        <div id = "index-container">
-            {{#get "posts" limit="all"}}
-                {{#foreach posts}}
-                   
-                    <span>
-                        {{date published_at format="MMM DD, YYYY"}}:  <a href="{{url}}">{{title}}</a>
-                    </span>
-                    <br>
-                {{/foreach}}
-            {{/get}}
+        <div class = "center-container">
+<!--Search form using ghostHunter-->
+            <div class = "search-form">
+                <form>
+                    <img src = "{{asset "images/search.svg"}}"/>
+                    <input class = "search-field" type = "text" placeholder = "Search" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search'"/>
+                </form>
+            </div>
+<!--Search results from ghostHunter, hides index container upon showing results-->
+            <section class="search-results"></section>
+
+<!--Contains index of loosely categorized posts-->
+            <div class = "index-container">
+                {{#get "posts" limit="all"}}
+                    {{#foreach posts}}
+                        <span>
+                            <a href="{{url}}">{{title}}</a>
+                        </span>
+                        <br>
+                    {{/foreach}}
+                {{/get}}
+            </div>
         </div>
+        
     </div>
 </main>

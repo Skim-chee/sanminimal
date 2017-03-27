@@ -1,0 +1,39 @@
+.post-url {
+    display: none;
+}
+
+.cover-link, .cover-image{
+    margin: auto;
+    display: block;
+    width: 400px;
+}
+.cover-image {
+    img {
+        margin-top: 72px; 
+        width: 400px;
+    }
+}
+
+.issue-info, .publication-info {
+        /* Safari */
+        -webkit-transform: rotate(90deg);
+        /* Firefox */
+        -moz-transform: rotate(90deg);
+        /* IE */
+        -ms-transform: rotate(90deg);
+        /* Opera */
+        -o-transform: rotate(90deg);
+        
+        width: 400px;
+        position: absolute;
+}
+.issue-info {
+        font-weight: 300;
+        font-size: 14px;
+        letter-spacing: 4px;
+}
+.publication-info {
+        font-weight: 300;
+        font-size: 9px;
+        letter-spacing: 2px;
+}

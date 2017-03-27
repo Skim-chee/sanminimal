@@ -3,30 +3,33 @@
 <main role="main">
     <div class = "container">
 		<header class="post-header">
-            <!-- Sanminimal logo, links to homepage -->
+<!-- Sanminimal logo, links to homepage -->
 			<a class="blog-logo" href="{{@blog.url}}"><img src="{{asset "images/Logo.svg"}}" alt="{{@blog.title}}" /></a>
 		</header>
         
-        <div id = "issue-info">February 1995|no.25</div>
-        <div id = "publication-info">PRINTED IN NY</div>
-        <div id = "about-image">
+        <div class = "issue-info">February 1995|no.25</div>
+        <div class = "publication-info">PRINTED IN NY</div>
+        <div class = "cover-image">
             <img src="{{asset "images/portrait.jpg"}}" alt="portrait" />
 	    </div>
         
-        <div id = "about-container">
-            <div id = "about-content">
-                <br>
-                <p id = "about-header">Editor-in-chief : Seean Kim</p>
-                <br>
-                <p>I am based in New York. Sanminimal will be where I share my reviews, recipes, and shoots. </p>
-                <br>
-                <p>Email me at <a href = "mailto:sanminimal@gmail.com">sanminimal@gmail.com</a></p>
-                <br>
-                <p>I will gladly review your product, just shoot me an email! All reviews are honest and are written after extended use. I do not publish press releases, and you must send in your product for a review. </p>
-            </div>
-            <div id = "instagram">
-                <br>
-                <a href = "https://www.instagram.com/skim_chee/"><img src="{{asset "images/instagram.svg"}}" onmouseover="this.src = '{{asset "images/instagram-hover.svg"}}'" onmouseout="this.src = '{{asset "images/instagram.svg"}}'" alt="portrait" /></a>
+        <div class = "center-container">
+<!-- Information about me, with contact info and social media links-->
+            <div class = "about-container">
+                <div class = "about-content">
+                    <br>
+                    <p class = "about-header">Editor-in-chief : Seean Kim</p>
+                    <br>
+                    <p>I am based in New York. Sanminimal will be where I share my reviews, recipes, and shoots. </p>
+                    <br>
+                    <p>Email me at <a href = "mailto:sanminimal@gmail.com">sanminimal@gmail.com</a></p>
+                    <br>
+<!-- <p>I will gladly review your product, just shoot me an email! All reviews are honest and are written after extended use. I do not publish press releases, and you must send in your product for a review. </p>-->
+                </div>
+                <div class = "instagram">
+                    <br>
+                    <a href = "https://www.instagram.com/seean_kim/" target="_blank"><img src="{{asset "images/instagram.svg"}}" onmouseover="this.src = '{{asset "images/instagram-hover.svg"}}'" onmouseout="this.src = '{{asset "images/instagram.svg"}}'" alt="portrait" /></a>
+                </div>
             </div>
         </div>
     </div>

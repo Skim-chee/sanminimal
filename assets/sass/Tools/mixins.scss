@@ -124,6 +124,14 @@ $desktop-width: 1024px;
 	transition: $a;
 }
 
+@mixin transform($a) {
+    -webkit-transform: $a;
+	-moz-transform: $a;
+	-ms-transform: $a;
+	-o-transform: $a;
+	transform: $a;
+}
+
 // Keyframes
 
 /****************************************

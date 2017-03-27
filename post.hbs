@@ -4,29 +4,27 @@
 {{#post}}
              
 <div class = "container">
-<article class="{{post_class}}">
-    
-  <header class="post-header">
-    <!-- Sanminimal logo, links to homepage -->
-    <a class="blog-logo" href="{{@blog.url}}"><img src="{{asset "images/Logo.svg"}}" alt="{{@blog.title}}" /></a>
-  </header>
-    
-  <section class="post-content">
-      
-    <!-- Hidden post url for cover image link, used by javascript -->
-    <div id = "post-url">{{url}}</div>
-    <div id = "issue-info">{{date format = 'MMMM YYYY'}}|no.{{this.id}}</div>
-    <div id = "publication-info">PRINTED IN NY</div>  
-    <!-- Main content inserted here -->  
-    {{content}}
-      
-    <h1 class="post-title">{{title}}</h1>
-      
-    <section class="post-meta">
-       
-    </section>
-      
-  </section>     
-</article>
+    <article class="{{post_class}}">
+
+      <header class="post-header">
+        <!-- Sanminimal logo, links to homepage -->
+        <a class="blog-logo" href="{{@blog.url}}"><img src="{{asset "images/Logo.svg"}}" alt="{{@blog.title}}" /></a>
+      </header>
+
+      <section class="post-content">
+
+        <!-- Hidden post url for cover image link, used by javascript -->
+        <div class = "post-url">{{url}}</div>
+        <div class = "issue-info">{{date format = 'MMMM YYYY'}}|no.{{this.id}}</div>
+        <div class = "publication-info">PRINTED IN NY</div>  
+        <!-- Main content inserted here -->  
+        {{content}}
+
+        <section class="post-meta">
+
+        </section>
+
+      </section>     
+    </article>
 </div>
 {{/post}}    

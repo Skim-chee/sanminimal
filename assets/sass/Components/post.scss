@@ -14,10 +14,31 @@
 
 
 .post {
-	
+    
 	p {
 		font-size: 14px;
 		line-height: 25px;
-       
+        column-count: 2;
 	}
+    
+    p > img {
+        display: block;
+        height: 800px;
+        margin-left: 50%;
+        @include transform(translateX(-50%));
+        column-span: all; 
+
+    }
+    
+    .caption {
+        color: $gray-main;
+        font-size: 11px;
+        letter-spacing: 2px;
+        
+        @include flexbox();
+        justify-content: center;
+    }
+    
+
 }
+

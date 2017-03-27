@@ -26,25 +26,47 @@
 //     }
 // }
 $(document).ready(function(){
-    if ($('#post-url').text().length > 0) {
-        var url = $('#post-url').text();
-    }
-    $('#cover-image').wrap('<a href="'+ url +'"></a>');
     
+    //Checks to make sure image has valid link, and then wraps cover image in link to post
+    if ($('.post-url').text().length > 0) {
+        var url = $('.post-url').text();
+    }
+    if (url) {
+        $('.cover-image').wrap('<a class = "cover-link" href="'+ url +'"></a>');
+    }
+    //Sets up side bar info for date and publishing info for cover images
     function offsets(){
-        var coveroff = $('#cover-image, #about-image').offset();
-            $('#issue-info').offset({
-                top : coveroff.top + 250,
-                left :  coveroff.left + $('#cover-image, #about-image').outerWidth(true) + 8
+        var coveroff = $('.cover-image').offset();
+            $('.issue-info').offset({
+                top : coveroff.top + 150,
+                left :  coveroff.left + 410
             });
-            $('#publication-info').offset({
-                top : coveroff.top + $('#cover-image, #about-image').outerHeight(true) - 100,
+            $('.publication-info').offset({
+                top : coveroff.top + $('.cover-image').outerHeight(true) - 100,
                 left :  coveroff.left - 20
         });
     }
     offsets();
-    
+    //Continually adjusts to cover image as it moves around as window is resized
     $(window).resize(function() {
         offsets();
     });
+    
+    // ghostHunter - searches through posts using an keyword algorithm
+    $(".search-results").addClass("results-hide");
+    var searchField = $(".search-field").ghostHunter({
+        //Links ghostHunter to search box
+        results: ".search-results",
+        displaySearchInfo: false,
+        result_template : "<a href='{{link}}'><li class='list-group-item'>{{title}}</li></a>",
+        before: function(){ 
+            //On search, hides index and shows search results
+            $(".search-results").removeClass("results-hide");
+            $(".index-container").addClass("index-hide");
+            //Clears search field upon searching, feedback that search went through
+            searchField.clear();
+        }
+    }); 
 });
+
+
