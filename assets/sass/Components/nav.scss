@@ -23,17 +23,6 @@
         li {
             padding: .875rem 1.25rem;
 
-            a {
-                font-size: 13px;
-                letter-spacing: 6px;
-                
-                height: inherit;
-                width: inherit;
-                // Hovor effect of links
-                &:hover {
-                    color: $pink-main;
-                }
-            }
         }
 	}
     

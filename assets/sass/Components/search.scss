@@ -14,9 +14,10 @@ input[type="text"] {
     width: 150px;
     @include transition(0.3s ease);
     border-bottom: 1px solid transparent;
-    font-size: 16px;
     font-weight: normal;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: $size-2;
     color: $black-main;
 }
 

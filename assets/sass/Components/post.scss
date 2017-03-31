@@ -16,9 +16,12 @@
 .post {
     
 	p {
-		font-size: 14px;
 		line-height: 25px;
+        
         column-count: 2;
+        @include phone(){
+            column-count: 1;
+        }
 	}
     
     p > img {
@@ -31,12 +34,7 @@
     }
     
     .caption {
-        color: $gray-main;
-        font-size: 11px;
-        letter-spacing: 2px;
-        
-        @include flexbox();
-        justify-content: center;
+    
     }
     
 

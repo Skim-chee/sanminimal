@@ -17,11 +17,6 @@ img {
     }
 }
 
-p {
-    font-size: 13px;
-    letter-spacing: 0.75px;
-}
-
 .container {
     margin: auto;
 	max-width: 800px;
@@ -32,6 +27,11 @@ p {
     width: 400px;
 }
 
+.post-link {
+    display: inline-block;
+    letter-spacing: normal;
+    margin-top: $size-1;
+}
 
 
    

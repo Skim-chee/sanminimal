@@ -10,30 +10,34 @@
 .cover-image {
     img {
         margin-top: 72px; 
-        width: 400px;
+        width: 400px;    
     }
 }
 
 .issue-info, .publication-info {
-        /* Safari */
-        -webkit-transform: rotate(90deg);
-        /* Firefox */
-        -moz-transform: rotate(90deg);
-        /* IE */
-        -ms-transform: rotate(90deg);
-        /* Opera */
-        -o-transform: rotate(90deg);
-        
-        width: 400px;
-        position: absolute;
+    /* Safari */
+    -webkit-transform: rotate(90deg);
+    /* Firefox */
+    -moz-transform: rotate(90deg);
+    /* IE */
+    -ms-transform: rotate(90deg);
+    /* Opera */
+    -o-transform: rotate(90deg);
+    
+    display: none;
+    width: 400px;
+    position: absolute;
+}
+.info-visible {
+    display: inherit;
 }
 .issue-info {
-        font-weight: 300;
-        font-size: 14px;
-        letter-spacing: 4px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    font-size: $size-2;
 }
 .publication-info {
-        font-weight: 300;
-        font-size: 9px;
-        letter-spacing: 2px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: $size-1;
 }

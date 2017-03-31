@@ -34,9 +34,13 @@ $(document).ready(function(){
     if (url) {
         $('.cover-image').wrap('<a class = "cover-link" href="'+ url +'"></a>');
     }
-    //Sets up side bar info for date and publishing info for cover images
-    function offsets(){
-        var coveroff = $('.cover-image').offset();
+    if ($(window).width() > 768){
+        //Sets up side bar info for date and publishing info for cover images, only works for tablets & desktops
+        function offsets(){
+            // Adds visibility back to info, only for tablets & desktops
+            $('.issue-info, .publication-info').addClass('info-visible');
+            
+            var coveroff = $('.cover-image').offset();
             $('.issue-info').offset({
                 top : coveroff.top + 150,
                 left :  coveroff.left + 410
@@ -44,13 +48,14 @@ $(document).ready(function(){
             $('.publication-info').offset({
                 top : coveroff.top + $('.cover-image').outerHeight(true) - 100,
                 left :  coveroff.left - 20
+            });
+        }
+        offsets();
+        //Continually adjusts to cover image as it moves around as window is resized
+        $(window).resize(function() {
+            offsets();
         });
     }
-    offsets();
-    //Continually adjusts to cover image as it moves around as window is resized
-    $(window).resize(function() {
-        offsets();
-    });
     
     // ghostHunter - searches through posts using an keyword algorithm
     $(".search-results").addClass("results-hide");

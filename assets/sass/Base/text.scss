@@ -1,0 +1,69 @@
+
+
+$serif: 'Playfair Display', serif;
+
+p {
+    color: $black-main;
+    font-size: $size-2;
+    font-weight: 300;
+    margin-top: $size-3;
+    margin-bottom: 0;
+}
+
+h1, h2, h3 {
+    color: $black-main;
+    font-family: $serif;
+}
+
+h1 {
+    
+}
+
+h2 {
+    font-size: $size-4;
+    font-family: $serif;
+    font-weight: 700;
+    margin: $size-2 0;
+}
+
+h3 {
+    font-size: $size-4;
+    font-family: $serif;
+    font-weight: 700;
+    margin: $size-2 0;
+}
+
+h4 {
+    
+}
+
+h5 {
+    color: $gray-main;
+    letter-spacing: 2px;
+    font-weight: 300;
+    
+        
+    @include flexbox();
+    justify-content: center;
+}
+
+a {
+     font-size: $size-2;
+     font-weight: 400;
+                
+     height: inherit;
+     width: inherit;
+     // Hovor effect of links
+     &:hover {
+         color: $pink-main;
+     }
+}
+.nav-link {
+    font-weight: 300;
+    letter-spacing: 6px;
+}
+
+.index-link {
+    display: inline-block;
+    margin-top: $size-1;
+}

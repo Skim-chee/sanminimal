@@ -1,6 +1,7 @@
 /************
 * Display  *
-* 	- Flex  *
+* 	- Flex *
+*   - Text *
 ************/
 
 // Creates flexbox layout
@@ -39,9 +40,22 @@
 	margin-right: calc(-50vw + 50%);
 }
 
+//Text column helpers
+@mixin column($val) {
+    -webkit-columns: $val;
+    -moz-columns: $val;
+    columns: $val;
+}
+
+@mixin columnbreak() {
+    //IMPORTANT: Mozilla currently does not support, will soon though https://bugzilla.mozilla.org/show_bug.cgi?id=616436
+    -webkit-column-span: all; 
+    column-span: all; 
+}
+
 
 /************************
-* Screen               *
+* Screen                  *
 * 		- Media Queries   *
 * 		- Retina Display  *
 ************************/
@@ -57,18 +71,18 @@
 * 		}                   *
 **************************/
 
-$phone-width: 320px;
-$tablet-width: 768px;
-$desktop-width: 1024px;
+$phone-width: 20rem;
+$tablet-width: 48rem;
+$desktop-width: 64rem;
 
 @mixin phone {
-	@media only screen and (min-width: #{$phone-width}) and (max-width: #{$tablet-width - 1px}) {
+	@media only screen and (min-width: #{$phone-width}) and (max-width: #{$tablet-width - .0625rem}) {
 		@content;
     }
 }
 
 @mixin tablet {
-	@media only screen and (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+	@media only screen and (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - .0625rem}) {
 		@content;
     }
 }
