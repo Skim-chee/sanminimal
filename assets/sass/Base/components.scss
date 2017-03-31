@@ -1,20 +1,5 @@
 body {
-    color: $black-main;
-	background-color: $white-main;
-}
-
-a {
-	color: $black-main;
-	font-weight: 400;
-    &:hover {
-        color: $pink-main;
-    }
-}
-
-img {
-    &, &:active, &:hover {
-        outline: none !important;
-    }
+    background-color: $white-main;
 }
 
 .container {
@@ -27,11 +12,7 @@ img {
     width: 400px;
 }
 
-.post-link {
-    display: inline-block;
-    letter-spacing: normal;
-    margin-top: $size-1;
-}
+
 
 
    

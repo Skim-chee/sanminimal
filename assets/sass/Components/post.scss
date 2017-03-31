@@ -5,6 +5,7 @@
     width: 400px;
     @include flexbox();
     justify-content: center;
+    
     .blog-logo {
         img {
             width: 350px;
@@ -15,9 +16,7 @@
 
 .post {
     
-	p {
-		line-height: 25px;
-        
+	p {        
         column-count: 2;
         @include phone(){
             column-count: 1;
@@ -26,11 +25,13 @@
     
     p > img {
         display: block;
-        height: 800px;
+        height: 600px;
         margin-left: 50%;
         @include transform(translateX(-50%));
-        column-span: all; 
-
+        @include columnbreak();
+    }
+    
+    .landscape {
     }
     
     .caption {

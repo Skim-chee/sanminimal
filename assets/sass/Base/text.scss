@@ -1,5 +1,3 @@
-
-
 $serif: 'Playfair Display', serif;
 
 p {
@@ -8,6 +6,7 @@ p {
     font-weight: 300;
     margin-top: $size-3;
     margin-bottom: 0;
+    line-height: $size-3;
 }
 
 h1, h2, h3 {
@@ -38,32 +37,44 @@ h4 {
 }
 
 h5 {
-    color: $gray-main;
-    letter-spacing: 2px;
-    font-weight: 300;
     
-        
+}
+
+h6 {
+    font-size: $size-2;
+    color: $gray-main;
+    font-weight: 300;
+    margin: $size-1 0;
+    
     @include flexbox();
-    justify-content: center;
+    justify-content: center; 
 }
 
 a {
-     font-size: $size-2;
-     font-weight: 400;
+    color: $black-main;
+    font-size: $size-2;
+    font-weight: 400;
                 
-     height: inherit;
-     width: inherit;
-     // Hovor effect of links
-     &:hover {
-         color: $pink-main;
-     }
+    // Hovor effect of links
+    &:hover {
+        color: $pink-main;
+    }
 }
 .nav-link {
     font-weight: 300;
     letter-spacing: 6px;
 }
 
-.index-link {
+.post-link {
     display: inline-block;
     margin-top: $size-1;
+}
+
+.img-link {
+    color: $gray-main;
+    margin: $size-1 0;
+    
+    @include columnbreak();
+    @include flexbox();
+    justify-content: center; 
 }
