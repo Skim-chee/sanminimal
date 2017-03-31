@@ -1,7 +1,7 @@
 .navbar{   
     height: 50px;
     margin-top: 10px;
-    width: 100%;
+    max-width: 100%;
     @include flexbox();
     justify-content: center;
     

@@ -12,7 +12,10 @@ body {
     width: 400px;
 }
 
-
-
+img {
+    @include phone {
+        max-width: 100% !important;
+    }
+}
 
    
