@@ -22,7 +22,10 @@
         // Styles individual links in navbar
         li {
             padding: .875rem 1.25rem;
-
+            
+            @include phone {
+                padding: .1rem .2rem;
+            }
         }
 	}
     

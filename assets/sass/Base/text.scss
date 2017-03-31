@@ -63,6 +63,10 @@ a {
 .nav-link {
     font-weight: 300;
     letter-spacing: 6px;
+    
+    @include phone {
+        letter-spacing: 1px;
+    }
 }
 
 .post-link {

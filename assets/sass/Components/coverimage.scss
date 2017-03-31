@@ -2,10 +2,37 @@
     display: none;
 }
 
+.post-header{
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    width: 400px;
+    @include flexbox();
+    justify-content: center;
+    
+    @include phone {
+        width: 100%;
+        left: auto;
+        margin-left: auto;
+    }
+    
+    .blog-logo {
+        img {
+            width: 350px;
+             @include phone {
+                width: 100%;
+             }
+        }
+    }
+}
+
 .cover-link, .cover-image{
     margin: auto;
     display: block;
     width: 400px;
+    @include phone {
+        max-width: 100%;
+    }
 }
 .cover-image {
     img {
