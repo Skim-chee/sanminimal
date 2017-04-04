@@ -14,8 +14,19 @@ body {
 
 img {
     @include phone {
-        max-width: 100% !important;
+        max-width: 100%;
     }
 }
 
+footer {
+    section {
+        float: right;
+    }
+    
+    .copyright {
+        font-weight: 300;
+        margin-bottom: $size-3;
+        font-size: $size-1;
+    }
+}
    
