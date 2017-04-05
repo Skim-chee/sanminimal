@@ -11,7 +11,7 @@ Theme built using SASS and Jquery
 
 ## Color Scheme
 ---
-![Color Scheme](http://imgur.com/a/qrns4)
+![ColorScheme](http://i.imgur.com/ni7nYWd.png)
 
 ## Typography
 ---	
