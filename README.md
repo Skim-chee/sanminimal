@@ -3,7 +3,7 @@
 ## About
 ---
 
-Personal photography blog featuring underground cul- ture in contemporary product design, food, and fashion.
+Personal photography blog featuring underground culture in contemporary product design, food, and fashion.
 
 Built on the Ghost Blogging platform(https://ghost.org/) - based on Ruby on Rails
 
