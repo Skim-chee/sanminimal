@@ -46,7 +46,7 @@ $(document).ready(function(){
                 left :  coveroff.left + 410
             });
             $('.publication-info').offset({
-                top : coveroff.top + $('.cover-image').outerHeight(true) - 100,
+                top : coveroff.top + $('.cover-image').outerHeight(true) - 125,
                 left :  coveroff.left - 20
             });
         }

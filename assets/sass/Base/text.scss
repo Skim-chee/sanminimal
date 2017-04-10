@@ -1,35 +1,39 @@
-$serif: 'Playfair Display', serif;
+::selection {
+    color: $white;
+    background: $pink-main;
+}
 
 p {
+    margin: $size-2 0;
     color: $black-main;
     font-size: $size-2;
     font-weight: 300;
-    margin-top: $size-3;
-    margin-bottom: 0;
     line-height: $size-3;
 }
 
 h1, h2, h3 {
     color: $black-main;
     font-family: $serif;
+    margin: 0;
 }
 
 h1 {
+    font-size: $size-5;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
     
 }
 
 h2 {
     font-size: $size-4;
-    font-family: $serif;
-    font-weight: 700;
-    margin: $size-2 0;
+    display: flex;
+    justify-content: center;
 }
 
 h3 {
     font-size: $size-4;
-    font-family: $serif;
     font-weight: 700;
-    margin: $size-2 0;
 }
 
 h4 {
@@ -60,6 +64,8 @@ a {
         color: $pink-main;
     }
 }
+
+//Nav bar 
 .nav-link {
     font-weight: 300;
     letter-spacing: 6px;
@@ -68,12 +74,13 @@ a {
         letter-spacing: 1px;
     }
 }
-
+//general links
 .post-link {
     display: inline-block;
     margin-top: $size-1;
 }
 
+//links under images <use case: instagram links, product links etc.>
 .img-link {
     color: $gray-main;
     margin: $size-1 0;
@@ -83,11 +90,13 @@ a {
     justify-content: center; 
 }
 
+//For tags
 .post-meta, .post-meta a {
     margin: $size-3 0;
     color: $gray-main;
 }
 
+//For page navigation links
 .pagination a {
     color: $gray-main;
 }
