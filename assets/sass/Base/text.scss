@@ -4,7 +4,9 @@
 }
 
 p {
-    margin: $size-2 0;
+    //Sets Margin between every element in a post
+    margin: $size-4 0;
+    
     color: $black-main;
     font-size: $size-2;
     font-weight: 300;
@@ -13,11 +15,12 @@ p {
 
 h1, h2, h3 {
     color: $black-main;
-    font-family: $serif;
     margin: 0;
 }
 
 h1 {
+    margin-top: $size-4;
+    font-family: $serif;
     font-size: $size-5;
     font-weight: 900;
     display: flex;
@@ -26,7 +29,9 @@ h1 {
 }
 
 h2 {
-    font-size: $size-4;
+    font-size: $size-2;
+    font-weight: 300;
+    color: $gray-main;
     display: flex;
     justify-content: center;
 }
@@ -37,7 +42,7 @@ h3 {
 }
 
 h4 {
-    
+    font-size: $size-3;
 }
 
 h5 {
@@ -100,6 +105,11 @@ a {
 .pagination a {
     color: $gray-main;
 }
-.post-meta a:hover, .pagination a:hover{
+.post-meta a:hover, .pagination a:hover, .title-link h1:hover{
     color: $pink-main;
+}
+
+.break {
+    @include columnbreak();
+    font-size: $size-3;
 }

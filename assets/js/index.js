@@ -33,6 +33,7 @@ $(document).ready(function(){
     }
     if (url) {
         $('.cover-image').wrap('<a class = "cover-link" href="'+ url +'"></a>');
+        $('h1').wrap('<a class = "title-link" href="'+ url +'"></a>');
     }
     if ($(window).width() > 768){
         //Sets up side bar info for date and publishing info for cover images, only works for tablets & desktops
