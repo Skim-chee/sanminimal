@@ -34,6 +34,11 @@ h2 {
     color: $gray-main;
     display: flex;
     justify-content: center;
+    
+    a {
+        font-weight: 300;
+        color: $gray-main;
+    }
 }
 
 h3 {
@@ -83,16 +88,6 @@ a {
 .post-link {
     display: inline-block;
     margin-top: $size-1;
-}
-
-//links under images <use case: instagram links, product links etc.>
-.img-link {
-    color: $gray-main;
-    margin: $size-1 0;
-    
-    @include columnbreak();
-    @include flexbox();
-    justify-content: center; 
 }
 
 //For tags
