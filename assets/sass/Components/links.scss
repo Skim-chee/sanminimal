@@ -1,0 +1,32 @@
+/**************
+Individual link stylizations
+***************/
+
+//Nav bar 
+.nav-link {
+    font-weight: 300;
+    letter-spacing: 6px;
+    
+    @include phone {
+        letter-spacing: 1px;
+    }
+}
+//general links
+.post-link {
+    display: inline-block;
+    margin-top: $size-1;
+}
+
+//For tags
+.post-meta, .post-meta a {
+    margin: $size-3 0;
+    color: $gray-main;
+}
+
+//For page navigation links
+.pagination a {
+    color: $gray-main;
+}
+.post-meta a:hover, .pagination a:hover, .title-link h1:hover{
+    color: $pink-main;
+}

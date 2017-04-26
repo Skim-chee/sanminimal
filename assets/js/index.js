@@ -44,7 +44,7 @@ $(document).ready(function(){
             var coveroff = $('.cover-image').offset();
             $('.issue-info').offset({
                 top : coveroff.top + 150,
-                left :  coveroff.left + 410
+                left :  coveroff.left + 810
             });
             $('.publication-info').offset({
                 top : coveroff.top + $('.cover-image').outerHeight(true) - 125,

@@ -1,6 +1,9 @@
+/********************
+Navbar Navigation
+********************/
 .navbar{   
-    height: 50px;
-    margin-top: 10px;
+    height: $size-4;
+    margin-top: $size-1;
     max-width: 100%;
     @include flexbox();
     justify-content: center;
@@ -13,7 +16,7 @@
     
 	//	Main nav bar 
 	.nav{
-        width: 800px;
+        width: 900px;
         @include flexbox();
         list-style-type: none;
 		margin: 0;
@@ -21,11 +24,14 @@
 
         // Styles individual links in navbar
         li {
-            padding: .875rem 1.25rem;
+            padding: .875rem 0;
             
             @include phone {
                 padding: .1rem .2rem;
             }
+        }
+        li:not(:last-child) {
+            padding-right: 1.25rem;
         }
 	}
     
@@ -38,16 +44,15 @@
 		display: none;
 	}
     
+    // Pushes Index/About to the right side
     .nav-sight {
         margin-right: auto;
     }
-    
-    .nav-archive, .nav-about {
-    }
-
-
 }
 
+/********************
+Pagination Navigation
+********************/
 .pagination {
     height: 25px;
     margin: $size-3 0;

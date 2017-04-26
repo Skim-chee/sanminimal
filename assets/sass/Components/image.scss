@@ -1,0 +1,7 @@
+img{            
+    width: 900px;
+    
+    @include phone {
+        max-width: 100%;
+    }
+}

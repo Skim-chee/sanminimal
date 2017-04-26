@@ -1,12 +1,17 @@
+/*****************
+Styles Cover-Image
+*****************/
+
 .post-url {
     display: none;
 }
 
+//Styles Blog header
 .post-header{
     position: absolute;
     left: 50%;
-    margin-left: -200px;
-    width: 400px;
+    margin-left: -250px;
+    width: 500px;
     @include flexbox();
     justify-content: center;
     
@@ -18,7 +23,7 @@
     
     .blog-logo {
         img {
-            width: 350px;
+            width: 500px;
              @include phone {
                 width: 100%;
              }
@@ -26,18 +31,10 @@
     }
 }
 
-.cover-link, .cover-image{
-    margin: auto;
-    display: block;
-    width: 400px;
-    @include phone {
-        max-width: 100%;
-    }
-}
+//Pushes Cover-image below blog logo appropriate distance
 .cover-image {
     img {
-        margin-top: 72px; 
-        width: 400px;    
+        margin-top: 109px;    
     }
 }
 
@@ -52,7 +49,7 @@
     -o-transform: rotate(90deg);
     
     display: none;
-    width: 400px;
+    width: 900px;
     position: absolute;
 }
 .info-visible {

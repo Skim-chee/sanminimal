@@ -1,0 +1,13 @@
+/********************
+Text components
+********************/
+
+.post {
+	p {        
+        column-count: 2;
+        @include phone(){
+            column-count: 1;
+        } 
+	}
+}
+
