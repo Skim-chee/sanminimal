@@ -8,6 +8,7 @@ Styles Cover-Image
 
 //Styles Blog header
 .post-header{
+    z-index: 1;
     position: absolute;
     left: 50%;
     margin-left: -250px;
@@ -34,9 +35,14 @@ Styles Cover-Image
 //Pushes Cover-image below blog logo appropriate distance
 .cover-image {
     img {
+        z-index: -1;
         margin-top: 109px;    
+        &:hover {
+            opacity: 0.5
+        }
     }
 }
+
 
 .issue-info, .publication-info {
     /* Safari */
@@ -48,8 +54,9 @@ Styles Cover-Image
     /* Opera */
     -o-transform: rotate(90deg);
     
+    z-index: 1;
     display: none;
-    width: 900px;
+    width: 300px;
     position: absolute;
 }
 .info-visible {

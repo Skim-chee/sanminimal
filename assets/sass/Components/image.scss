@@ -1,4 +1,4 @@
-img{            
+p > img, .cover-image > img{            
     width: 900px;
     
     @include phone {

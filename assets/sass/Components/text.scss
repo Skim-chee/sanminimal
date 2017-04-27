@@ -9,5 +9,10 @@ Text components
             column-count: 1;
         } 
 	}
+    
+    //Bugfix for Firefox, column-count conflicts with <br> tag for star rating system :/ 
+    .rating-system p{
+        column-count: 1;
+    }
 }
 
