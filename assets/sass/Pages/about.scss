@@ -1,31 +1,32 @@
-/** 
+/**
 About Page
 **/
 .about-container {
+  @include flexbox();
+  justify-content: space-between;
+
+  .about-content {
+    position: relative;
+    width: 250px;
+    left: 0;
+  }
+
+  .about-header {
     @include flexbox();
-    justify-content: space-between;
-    
-    .about-content {
-        position: relative;
-        width: 250px;
-        left: 0%;  
+    justify-content: center;
+    font-weight: 400;
+    padding: 5px 0;
+    letter-spacing: 1.3px;
+    color: $white-main;
+    background-color: $pink-main;
+  }
+
+  .instagram img {
+    float: right;
+    width: 50px;
+
+    img:hover {
+      color: $pink-main;
     }
-    .about-header {
-            @include flexbox();
-            justify-content: center;
-            font-weight: 400;
-            padding: 5px 0px;
-            letter-spacing: 1.3px;
-            color: $white-main;
-            background-color: $pink-main;
-    }
-    .instagram img{
-        float: right;
-        width:50px;
-        img:hover {
-            color: $pink-main;
-        }
-    }
-  
+  }
 }
-  

@@ -1,110 +1,70 @@
 ::selection {
-    color: $white;
-    background: $pink-main;
+  color: $white;
+  background: $pink-main;
 }
 
 p {
-    //Sets Margin between every element in a post
-    margin: $size-4 0;
-    
-    color: $black-main;
-    font-size: $size-2;
-    font-weight: 300;
-    line-height: $size-3;
+  font-size: $size-2;
+  font-weight: 300;
+  line-height: $size-3;
+  //Sets Margin between every element in a post
+  margin: $size-4 0;
+  color: $black-main;
 }
 
-h1, h2, h3 {
-    color: $black-main;
-    margin: 0;
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: $black-main;
 }
 
 h1 {
-    margin-top: $size-6;
-    font-family: $serif;
-    font-size: $size-5;
-    font-weight: 900;
-    display: flex;
-    justify-content: center;
-    
+  font-family: $serif;
+  font-size: $size-5;
+  font-weight: 900;
+  display: flex;
+  margin-top: $size-6;
+  justify-content: center;
 }
 
 h2 {
-    font-size: $size-2;
+  font-size: $size-2;
+  font-weight: 300;
+  display: flex;
+  color: $gray-main;
+  justify-content: center;
+
+  a {
     font-weight: 300;
     color: $gray-main;
-    display: flex;
-    justify-content: center;
-    
-    a {
-        font-weight: 300;
-        color: $gray-main;
-    }
+  }
 }
 
 h3 {
-    font-size: $size-4;
-    font-weight: 700;
+  font-size: $size-4;
+  font-weight: 700;
 }
 
 h4 {
-    font-size: $size-3;
-}
-
-h5 {
-    
+  font-size: $size-3;
 }
 
 h6 {
-    font-size: $size-2;
-    color: $gray-main;
-    font-weight: 300;
-    margin: $size-1 0;
-    
-    @include flexbox();
-    justify-content: center; 
+  font-size: $size-2;
+  font-weight: 300;
+  margin: $size-1 0;
+  color: $gray-main;
+  @include flexbox();
+  justify-content: center;
 }
 
 a {
-    color: $black-main;
-    font-size: $size-2;
-    font-weight: 400;
-                
-    // Hovor effect of links
-    &:hover {
-        color: $pink-main;
-    }
-}
-
-//Nav bar 
-.nav-link {
-    font-weight: 300;
-    letter-spacing: 6px;
-    
-    @include phone {
-        letter-spacing: 1px;
-    }
-}
-//general links
-.post-link {
-    display: inline-block;
-    margin-top: $size-1;
-}
-
-//For tags
-.post-meta, .post-meta a {
-    margin: $size-3 0;
-    color: $gray-main;
-}
-
-//For page navigation links
-.pagination a {
-    color: $gray-main;
-}
-.post-meta a:hover, .pagination a:hover, .title-link h1:hover{
+  font-size: $size-2;
+  font-weight: 400;
+  color: $black-main;
+  // Hovor effect of links
+  &:hover {
     color: $pink-main;
-}
-
-.break {
-    @include columnbreak();
-    font-size: $size-3;
+  }
 }

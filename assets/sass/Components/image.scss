@@ -1,7 +1,7 @@
-p > img, .cover-image > img{            
-    width: 900px;
-    
-    @include phone {
-        max-width: 100%;
-    }
+.cover-image > img,
+p > img {
+  width: 900px;
+  @include phone {
+    max-width: 100%;
+  }
 }

@@ -1,18 +1,15 @@
 /********************
 Text components
 ********************/
-
 .post {
-	p {        
-        column-count: 2;
-        @include phone(){
-            column-count: 1;
-        } 
+	p {
+		column-count: 2;
+		@include phone() {
+			column-count: 1;
+		}
 	}
-    
-    //Bugfix for Firefox, column-count conflicts with <br> tag for star rating system :/ 
-    .rating-system p{
-        column-count: 1;
-    }
+	//Bugfix for Firefox, column-count conflicts with <br> tag for star rating system :/
+	.rating-system p {
+		column-count: 1;
+	}
 }
-

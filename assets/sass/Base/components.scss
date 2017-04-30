@@ -1,32 +1,31 @@
 body {
-    background-color: $white-main;
+  background-color: $white-main;
 }
 
 .container {
-    margin: auto;
-	max-width: 900px;
+  max-width: 900px;
+  margin: auto;
 }
 
 .center-container {
-    margin: auto;
-    width: 450px;
+  width: 450px;
+  margin: auto;
 }
 
 img {
-    @include phone {
-        max-width: 100%;
-    }
+  @include phone {
+    max-width: 100%;
+  }
 }
 
 footer {
-    section {
-        float: right;
-    }
-    
-    .copyright {
-        font-weight: 300;
-        margin-bottom: $size-3;
-        font-size: $size-1;
-    }
+  section {
+    float: right;
+  }
+
+  .copyright {
+    font-size: $size-1;
+    font-weight: 300;
+    margin-bottom: $size-3;
+  }
 }
-   
