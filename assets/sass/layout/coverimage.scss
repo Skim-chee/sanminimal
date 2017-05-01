@@ -4,7 +4,7 @@ Styles Cover-Image
 .post-url {
   display: none;
 }
-//Styles Blog header
+
 .post-header {
   z-index: 1;
   position: absolute;
@@ -29,45 +29,51 @@ Styles Cover-Image
   }
 }
 //Pushes Cover-image below blog logo appropriate distance
+
 .cover-image {
   img {
     z-index: -1;
     margin-top: 109px;
-
-    &:hover {
-      opacity: 0.5;
+  }
+}
+.post {
+  .cover-image{
+    img:hover {
+      opacity: 0.12;
     }
   }
 }
-
 /******************
 * Side components *
 ******************/
-.issue-info, .issue-number, .publication-info {
-  z-index: 1;
+.issue-info,
+.issue-number,
+.publication-info {
   display: none;
   position: absolute;
   font-weight: 300;
-
 }
+
 .issue-info,
 .publication-info {
   /* Safari */
   -webkit-transform: rotate(90deg);
   /* Firefox */
-  -moz-transform: rotate(90deg);
+     -moz-transform: rotate(90deg);
   /* IE */
-  -ms-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
   /* Opera */
-  -o-transform: rotate(90deg);
-
+       -o-transform: rotate(90deg);
 }
 
 .issue-info {
   letter-spacing: 4px;
   font-size: $size-2;
-  width: 175px;
-  h4 {
+  width: 300px;
+
+  .issue-no {
+    font-size: $size-4;
+    font-weight: 600;
     display: inline;
   }
 }
@@ -77,15 +83,20 @@ Styles Cover-Image
   font-size: $size-4;
   float: right;
   width: 175px;
+
   h5 {
     float: right;
   }
 }
 
+.issue-pink {
+  color: $pink-main;
+}
+
 .publication-info {
+  z-index: 1;
   letter-spacing: 2px;
   font-size: $size-1;
-
   color: $white-main;
   background-color: $pink-main;
   padding: $size-1;

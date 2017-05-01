@@ -45,14 +45,14 @@ $(document).ready(function(){
             var coveroff = $('.cover-image').offset();
             $('.issue-info').offset({
                 top : coveroff.top + 226,
-                left :  coveroff.left + 835
+                left :  coveroff.left + 840
             });
             $('.issue-number').offset({
                 top : coveroff.top + 100,
                 left :  coveroff.left + 670
             });
             $('.publication-info').offset({
-                top : coveroff.top + $('.cover-image').outerHeight(true) - 125,
+                top : coveroff.top + $('.cover-image').outerHeight(true) - 150,
                 left :  coveroff.left - 15
             });
       } else {

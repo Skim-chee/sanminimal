@@ -6,11 +6,11 @@
 
 // Creates flexbox layout
 @mixin flexbox() {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
+  display: -webkit-box;
+  display:    -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display:         flex;
 }
 
 /**
@@ -18,39 +18,39 @@
 * default: 0 1 auto
 */
 @mixin flex($val) {
-	-webkit-box-flex: $val;
-	-moz-box-flex:  $val;
-	-webkit-flex:  $val;
-	-ms-flex:  $val;
-	flex:  $val;
+  -webkit-box-flex: $val;
+     -moz-box-flex: $val;
+  -webkit-flex: $val;
+      -ms-flex: $val;
+          flex: $val;
 }
 
 // Determines what order the flex item is displayed in
 @mixin order($val) {
-	-webkit-box-ordinal-group: $val;
-	-moz-box-ordinal-group: $val;
-	-ms-flex-order: $val;
-	-webkit-order: $val;
-	order: $val;
+  -webkit-box-ordinal-group: $val;
+     -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+          order: $val;
 }
 
 //Releases div from it's container, making it flush with edges of the viewport
 @mixin release() {
-	margin-left: calc(-50vw + 50%);
-	margin-right: calc(-50vw + 50%);
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
 }
 
 //Text column helpers
 @mixin column($val) {
-    -webkit-columns: $val;
-    -moz-columns: $val;
-    columns: $val;
+  -webkit-columns: $val;
+     -moz-columns: $val;
+          columns: $val;
 }
 
 @mixin columnbreak() {
-    //IMPORTANT: Mozilla currently does not support, will soon though https://bugzilla.mozilla.org/show_bug.cgi?id=616436
-    -webkit-column-span: all;
-    column-span: all;
+  //IMPORTANT: Mozilla currently does not support, will soon though https://bugzilla.mozilla.org/show_bug.cgi?id=616436
+  -webkit-column-span: all;
+          column-span: all;
 }
 
 
@@ -72,39 +72,39 @@
 **************************/
 
 $phone-width: 20rem;
-$tablet-width: 48rem;
+$tablet-width: 56rem;
 $desktop-width: 64rem;
 
 @mixin phone {
-	@media only screen and (min-width: #{$phone-width}) and (max-width: #{$tablet-width - .0625rem}) {
-		@content;
-    }
+  @media only screen and (min-width: #{$phone-width}) and (max-width: #{$tablet-width - .0625rem}) {
+    @content;
+  }
 }
 
 @mixin tablet {
-	@media only screen and (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - .0625rem}) {
-		@content;
-    }
+  @media only screen and (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - .0625rem}) {
+    @content;
+  }
 }
 
 @mixin desktop {
-	@media only screen and (min-width: #{$desktop-width}), only screen and (min-device-width: #{$desktop-width}) {
-		@content;
-    }
+  @media only screen and (min-width: #{$desktop-width}), only screen and (min-device-width: #{$desktop-width}) {
+    @content;
+  }
 }
 
 // Retina Display
 
 @mixin retina {
-	@media
-		only screen and (-webkit-min-device-pixel-ratio: 2),
-		only screen and (min--moz-device-pixel-ratio: 2),
-		only screen and (-o-min-device-pixel-ratio: 2/1),
-		only screen and (min-device-pixel-ratio: 2),
-		only screen and (min-resolution: 192dpi),
-		only screen and (min-resolution: 2dppx) {
-			@content;
-	}
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+    @content;
+  }
 }
 
 /*******************
@@ -123,27 +123,27 @@ $desktop-width: 64rem;
 *******************************************/
 
 @mixin animation($a) {
-	-webkit-animation: #{$a};
-	-moz-animation: #{$a};
-	-ms-animation: #{$a};
-	-o-animation: #{$a};
-	animation: #{$a};
+  -webkit-animation: #{$a};
+     -moz-animation: #{$a};
+      -ms-animation: #{$a};
+       -o-animation: #{$a};
+          animation: #{$a};
 }
 
 @mixin transition($a) {
-	-webkit-transition: $a;
-	-moz-transition: $a;
-	-ms-transition: $a;
-	-o-transition: $a;
-	transition: $a;
+  -webkit-transition: $a;
+     -moz-transition: $a;
+      -ms-transition: $a;
+       -o-transition: $a;
+          transition: $a;
 }
 
 @mixin transform($a) {
-    -webkit-transform: $a;
-	-moz-transform: $a;
-	-ms-transform: $a;
-	-o-transform: $a;
-	transform: $a;
+  -webkit-transform: $a;
+     -moz-transform: $a;
+      -ms-transform: $a;
+       -o-transform: $a;
+          transform: $a;
 }
 
 // Keyframes
@@ -157,19 +157,19 @@ $desktop-width: 64rem;
 ****************************************/
 
 @mixin keyframes($animation) {
-	@-webkit-keyframes $animation {
-		@content;
-	}
-	@-moz-keyframes $animation {
-		@content;
-	}
-	@-ms-keyframes $animation {
-		@content;
-	}
-	@-o-keyframes $animation {
-		@content;
-	}
-	@keyframes $animation {
-		@content;
-	}
+  @-webkit-keyframes $animation {
+    @content;
+  }
+  @-moz-keyframes $animation {
+    @content;
+  }
+  @-ms-keyframes $animation {
+    @content;
+  }
+  @-o-keyframes $animation {
+    @content;
+  }
+  @keyframes $animation {
+    @content;
+  }
 }

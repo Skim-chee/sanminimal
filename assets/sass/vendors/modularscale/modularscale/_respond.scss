@@ -12,7 +12,6 @@
 @mixin ms-respond($prop, $val, $map: $modularscale) {
   $base: $ms-base;
   $ratio: $ms-ratio;
-
   $first-write: true;
   $last-break: null;
 
@@ -20,7 +19,6 @@
   @each $v, $s in $map {
     @if type-of($v) == number {
       @if unit($v) != '' {
-
         // Write out the first value without a media query.
         @if $first-write {
           #{$prop}: ms-function($val, $thread: $v, $settings: $map);

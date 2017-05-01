@@ -4,7 +4,6 @@
 // Issue for pow() support in Sass: https://github.com/sass/sass/issues/684
 
 @function ms-pow($b,$e) {
-
   // Return 1 if exponent is 0
   @if $e == 0 {
     @return 1;

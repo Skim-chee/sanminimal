@@ -3,11 +3,9 @@
 // Unfortunately libsass has a bug with passing arguments into the min() funciton.
 
 @function ms-sort($l) {
-
   // loop until the list is confirmed to be sorted
   $sorted: false;
   @while $sorted == false {
-
     // Start with the assumption that the lists are sorted.
     $sorted: true;
 

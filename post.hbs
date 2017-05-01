@@ -2,23 +2,24 @@
 
 <!-- Everything inside the #post tags pulls data from the post -->
 {{#post}}
-             
+
 <div class = "container">
     <article class="{{post_class}}">
       <section class="post-content">
 
         <!-- Hidden post url for cover image link, used by javascript -->
         <div class = "post-url">{{url}}</div>
-        <div class = "issue-info">{{date format = 'MMMM YYYY'}}|no.{{this.id}}</div>
-        <div class = "publication-info">PRINTED IN NY</div>  
-        <!-- Main content inserted here -->  
+        <div class = "issue-info"><span class = "issue-no">no</span> {{date format = 'MMMM YYYY'}}</div>
+        <div class = "issue-number"><h5>{{this.id}}</h5></div>
+        <div class = "publication-info">PRINTED IN NY</div>
+        <!-- Main content inserted here -->
         {{content}}
 
         <section class="post-meta">
             tags | {{tags}}
         </section>
 
-      </section>     
+      </section>
     </article>
     <div id="disqus_thread"></div>
 </div>
@@ -41,5 +42,5 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                                
-{{/post}}    
+
+{{/post}}

@@ -6,30 +6,30 @@
 //*::-moz-selection { background-color: $text-highlight !important; ;}
 
 * {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
-	font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a,
 a:active,
 a:focus {
-	outline: none !important;
-	/* Works in Firefox, Chrome, IE8 and above */
+  outline: none !important;
+  /* Works in Firefox, Chrome, IE8 and above */
 }
 
 img {
-	&,
-	&:active,
-	&:hover {
-		outline: none !important;
-	}
+  &,
+  &:active,
+  &:hover {
+    outline: none !important;
+  }
 }

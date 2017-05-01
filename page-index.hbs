@@ -1,15 +1,17 @@
 {{!< default}}
 
 <main role="main">
-    <div class = "container">  
-        <div class = "issue-info">{{date format = 'MMMM YYYY'}}|no.{{date format = 'D'}}</div>
-        <div class = "publication-info">PRINTED IN NY</div>
+    <div class = "container">
+        <div class = "issue-pink">
+          <div class = "issue-info"><span class = "issue-no">no</span> {{date format = 'MMMM YYYY'}}</div>
+          <div class = "issue-number"><h5>{{date format = 'D'}}</h5></div>
+          <div class = "publication-info">PRINTED IN NY</div>
+        </div>
+
         <div class = "cover-image">
             <img src="{{asset "images/index.jpg"}}" alt="portrait" />
-	    </div>
-        
-        <h6>sol 23 - Conrad Jon Godly</h6>
-        
+	      </div>
+
         <div class = "center-container">
 <!--Search form using ghostHunter-->
             <div class = "search-form">
@@ -33,6 +35,6 @@
                 {{/get}}
             </div>
         </div>
-        
+
     </div>
 </main>
