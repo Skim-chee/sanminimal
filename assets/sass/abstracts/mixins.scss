@@ -49,8 +49,8 @@
 
 @mixin columnbreak() {
     //IMPORTANT: Mozilla currently does not support, will soon though https://bugzilla.mozilla.org/show_bug.cgi?id=616436
-    -webkit-column-span: all; 
-    column-span: all; 
+    -webkit-column-span: all;
+    column-span: all;
 }
 
 

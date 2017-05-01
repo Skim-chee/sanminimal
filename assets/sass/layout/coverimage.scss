@@ -13,7 +13,7 @@ Styles Cover-Image
   width: 500px;
   @include flexbox();
   justify-content: center;
-  @include phone {
+  @include tablet {
     width: 100%;
     left: auto;
     margin-left: auto;
@@ -40,6 +40,16 @@ Styles Cover-Image
   }
 }
 
+/******************
+* Side components *
+******************/
+.issue-info, .issue-number, .publication-info {
+  z-index: 1;
+  display: none;
+  position: absolute;
+  font-weight: 300;
+
+}
 .issue-info,
 .publication-info {
   /* Safari */
@@ -50,24 +60,37 @@ Styles Cover-Image
   -ms-transform: rotate(90deg);
   /* Opera */
   -o-transform: rotate(90deg);
-  z-index: 1;
-  display: none;
-  width: 300px;
-  position: absolute;
+
+}
+
+.issue-info {
+  letter-spacing: 4px;
+  font-size: $size-2;
+  width: 175px;
+  h4 {
+    display: inline;
+  }
+}
+
+.issue-number {
+  letter-spacing: 4px;
+  font-size: $size-4;
+  float: right;
+  width: 175px;
+  h5 {
+    float: right;
+  }
+}
+
+.publication-info {
+  letter-spacing: 2px;
+  font-size: $size-1;
+
+  color: $white-main;
+  background-color: $pink-main;
+  padding: $size-1;
 }
 
 .info-visible {
   display: inherit;
-}
-
-.issue-info {
-  font-weight: 300;
-  letter-spacing: 4px;
-  font-size: $size-2;
-}
-
-.publication-info {
-  font-weight: 300;
-  letter-spacing: 2px;
-  font-size: $size-1;
 }

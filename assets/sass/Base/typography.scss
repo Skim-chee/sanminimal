@@ -1,3 +1,19 @@
+/************************
+* Sets Typography Scale *
+************************/
+
+//Use
+/*
+h3 {
+  font-size: ms(3);
+}
+*/
+
+$modularscale: (
+  base: 1em, // Change as necessary, use link to choose
+  ratio: 1.5 // http://www.modularscale.com/?1&em&1.618&web&text
+);
+
 ::selection {
   color: $white;
   background: $pink-main;
@@ -47,9 +63,13 @@ h3 {
 }
 
 h4 {
-  font-size: $size-3;
+  font-size: $size-4;
+  
 }
-
+h5 {
+  font-size: $size-5;
+  font-weight: 900;
+}
 h6 {
   font-size: $size-2;
   font-weight: 300;

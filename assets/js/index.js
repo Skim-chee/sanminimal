@@ -26,7 +26,7 @@
 //     }
 // }
 $(document).ready(function(){
-    
+
     //Checks to make sure image has valid link, and then wraps cover image in link to post
     if ($('.post-url').text().length > 0) {
         var url = $('.post-url').text();
@@ -35,29 +35,36 @@ $(document).ready(function(){
         $('.cover-image').wrap('<a class = "cover-link" href="'+ url +'"></a>');
         $('h1').wrap('<a class = "title-link" href="'+ url +'"></a>');
     }
-    if ($(window).width() > 768){
-        //Sets up side bar info for date and publishing info for cover images, only works for tablets & desktops
-        function offsets(){
+
+    //Sets up side bar info for date and publishing info for cover images, only works for tablets & desktops
+    function offsets(){
+      if ($(window).width() > 920){
             // Adds visibility back to info, only for tablets & desktops
-            $('.issue-info, .publication-info').addClass('info-visible');
-            
+            $('.issue-info, .issue-number, .publication-info').addClass('info-visible');
+
             var coveroff = $('.cover-image').offset();
             $('.issue-info').offset({
-                top : coveroff.top + 150,
-                left :  coveroff.left + 810
+                top : coveroff.top + 226,
+                left :  coveroff.left + 835
+            });
+            $('.issue-number').offset({
+                top : coveroff.top + 100,
+                left :  coveroff.left + 670
             });
             $('.publication-info').offset({
                 top : coveroff.top + $('.cover-image').outerHeight(true) - 125,
-                left :  coveroff.left - 20
+                left :  coveroff.left - 15
             });
-        }
-        offsets();
-        //Continually adjusts to cover image as it moves around as window is resized
-        $(window).resize(function() {
-            offsets();
-        });
+      } else {
+        $('.issue-info, .issue-number, .publication-info').removeClass('info-visible');
+      }
     }
-    
+    offsets();
+    //Continually adjusts to cover image as it moves around as window is resized
+    $(window).resize(function() {
+        offsets();
+    });
+
     // ghostHunter - searches through posts using an keyword algorithm
     $(".search-results").addClass("results-hide");
     var searchField = $(".search-field").ghostHunter({
@@ -65,14 +72,12 @@ $(document).ready(function(){
         results: ".search-results",
         displaySearchInfo: false,
         result_template : "<a href='{{link}}'><li class='list-group-item'>{{title}}</li></a>",
-        before: function(){ 
+        before: function(){
             //On search, hides index and shows search results
             $(".search-results").removeClass("results-hide");
             $(".index-container").addClass("index-hide");
             //Clears search field upon searching, feedback that search went through
             searchField.clear();
         }
-    }); 
+    });
 });
-
-

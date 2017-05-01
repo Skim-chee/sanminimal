@@ -1,14 +1,15 @@
-/*External*/
-@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400|Playfair+Display:400,700,700i,900,900i');
+@charset 'UTF-8';
 
-/* Functions/Mixins */
-@import "Tools/mixins";
+@import 'vendors/module';
 
-/* Low specifity styles (ex. CSS Resets) */
-@import "Base/module";
+@import 'abstracts/module';
 
-/* Components */
-@import "Components/module";
+@import 'base/module';
 
-/* Page specific css */
-@import "Pages/module";
+@import 'components/module';
+
+@import 'layout/module';
+
+@import 'pages/module';
+
+@import 'themes/module';
