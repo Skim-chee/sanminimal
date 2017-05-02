@@ -53,11 +53,12 @@ function offsets(){
 }
 
 
-//Runs offsets() once all content is loaded
-$(window).bind("load", function() {
+//Runs offsets() once cover-image is loaded
+$(".cover-image > img").one("load", function() {
   offsets();
+}).each(function() {
+  if(this.complete) $(this).load();
 });
-
 //Continually adjusts to cover image as it moves around as window is resized
 $(document).ready(function() {
   $(window).resize(function() {
