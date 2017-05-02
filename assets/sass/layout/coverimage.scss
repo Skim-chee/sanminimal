@@ -6,7 +6,6 @@ Styles Cover-Image
 }
 
 .post-header {
-  z-index: 1;
   position: absolute;
   left: 50%;
   margin-left: -250px;
@@ -32,17 +31,13 @@ Styles Cover-Image
 
 .cover-image {
   img {
-    z-index: -1;
     margin-top: 109px;
-  }
-}
-.post {
-  .cover-image{
-    img:hover {
-      opacity: 0.12;
+    @include phone {
+      margin-top: 65px;
     }
   }
 }
+
 /******************
 * Side components *
 ******************/
@@ -52,6 +47,13 @@ Styles Cover-Image
   display: none;
   position: absolute;
   font-weight: 300;
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+  cursor: default;
 }
 
 .issue-info,
@@ -94,7 +96,6 @@ Styles Cover-Image
 }
 
 .publication-info {
-  z-index: 1;
   letter-spacing: 2px;
   font-size: $size-1;
   color: $white-main;

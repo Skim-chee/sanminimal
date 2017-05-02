@@ -8,7 +8,6 @@
       <section class="post-content">
 
         <!-- Hidden post url for cover image link, used by javascript -->
-        <div class = "post-url">{{url}}</div>
         <div class = "issue-info"><span class = "issue-no">no</span> {{date format = 'MMMM YYYY'}}</div>
         <div class = "issue-number"><h5>{{this.id}}</h5></div>
         <div class = "publication-info">PRINTED IN NY</div>
@@ -30,8 +29,8 @@
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
 var disqus_config = function () {
-this.page.url = '{{url absolute = "true"}}';
-this.page.identifier = '{{url absolute = "true"}}';
+this.page.url = '{{url absolute="true"}}';
+this.page.identifier = 'ghost-{{id}}';
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE

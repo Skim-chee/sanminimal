@@ -10,7 +10,6 @@
 		<section class="post-excerpt">
 
 <!-- Hidden post url for cover image link, used by javascript -->
-            <div class = "post-url">{{url}}</div>
             <div class = "issue-info"><span class = "issue-no">no</span> {{date format = 'MMMM YYYY'}}</div>
             <div class = "issue-number"><h5>{{this.id}}</h5></div>
             <div class = "publication-info">PRINTED IN NY</div>
@@ -20,15 +19,36 @@
 
 		</section>
 
-		<footer class="post-meta">
+		<section class="post-meta">
             tags | {{tags}}
-		</footer>
+		</section>
 	</article>
 	{{/foreach}}
 
-    </div>
 
-</main>
 
 <!-- Previous/next page links - displayed on every page -->
 {{pagination}}
+
+<div id="disqus_thread"></div>
+</div>
+</main>
+
+<script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = '{{url absolute="true"}}';
+this.page.identifier = 'ghost-{{id}}';
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://sanminimal.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
