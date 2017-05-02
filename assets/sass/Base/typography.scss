@@ -43,11 +43,13 @@ h1 {
   margin-top: $size-4;
   justify-content: center;
   @include phone {
+    text-align: center;
     font-size: $size-4;
   }
 }
 
 h2 {
+  margin: $size-1 0;
   font-size: $size-2;
   font-weight: 300;
   display: flex;

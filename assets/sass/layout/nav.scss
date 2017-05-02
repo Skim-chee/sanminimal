@@ -22,12 +22,23 @@
     li {
       padding: .875rem 0;
       @include phone {
-        padding: .1rem .2rem;
+        padding: .075rem .1rem;
       }
     }
 
     li:not(:last-child) {
       padding-right: 1.25rem;
+    }
+
+    //Nav bar
+    .nav-link {
+      font-weight: 300;
+      letter-spacing: 6px;
+
+      @include phone {
+        font-size: $size-1;
+        letter-spacing: 1px;
+      }
     }
   }
   /************************

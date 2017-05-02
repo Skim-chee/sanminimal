@@ -1,15 +1,7 @@
 /**************
 Individual link stylizations
 ***************/
-//Nav bar
-.nav-link {
-  font-weight: 300;
-  letter-spacing: 6px;
 
-  @include phone {
-    letter-spacing: 1px;
-  }
-}
 //general links
 
 .post-link {
