@@ -66,11 +66,11 @@ Styles Cover-Image
 
 .issue-info {
   letter-spacing: 4px;
-  font-size: $size-2;
+  font-size: 15.456px;
   width: 300px;
 
   .issue-no {
-    font-size: $size-4;
+    font-size: 40.448px;
     font-weight: 600;
     display: inline;
   }
@@ -78,7 +78,7 @@ Styles Cover-Image
 
 .issue-number {
   letter-spacing: 4px;
-  font-size: $size-4;
+  font-size: 40.448px;
   float: right;
   width: 175px;
 
@@ -93,10 +93,10 @@ Styles Cover-Image
 
 .publication-info {
   letter-spacing: 2px;
-  font-size: $size-1;
+  font-size: 9.552px;
   color: $white-main;
   background-color: $pink-main;
-  padding: $size-1;
+  padding: 9.552px;
 }
 
 //Adds visibility to side info when screen is bigger than tablet
