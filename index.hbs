@@ -13,6 +13,9 @@
             <div class = "issue-info"><span class = "issue-no">no</span> {{date format = 'MMMM YYYY'}}</div>
             <div class = "issue-number"><h5>{{this.id}}</h5></div>
             <div class = "publication-info">PRINTED IN NY</div>
+            <div class = "post-id">{{this.id}}</div>
+            <div class = "post-url">{{url absolute="true"}}</div>
+
 
 <!-- Main content inserted here -->
 			{{content}}
@@ -40,8 +43,9 @@
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
 var disqus_config = function () {
-this.page.url = '{{url absolute="true"}}';
-this.page.identifier = 'ghost-{{id}}';
+this.page.url = document.getElementsByClassName('post-url')[0].innerHTML;
+this.page.identifier = 'hello-'+document.getElementsByClassName('post-id')[0].innerHTML;
+
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE

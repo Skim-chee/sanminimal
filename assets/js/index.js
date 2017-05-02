@@ -26,6 +26,8 @@
 //     }
 // }
 
+
+
 //Sets up side bar info for date and publishing info for cover images, only works for tablets & desktops
 function offsets(){
   if ($(window).width() > 920){
@@ -49,6 +51,7 @@ function offsets(){
     $('.issue-info, .issue-number, .publication-info').removeClass('info-visible');
   }
 }
+
 
 //Runs offsets() once all content is loaded
 $(window).bind("load", function() {
