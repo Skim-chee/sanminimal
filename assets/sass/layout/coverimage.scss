@@ -1,10 +1,6 @@
 /*****************
 Styles Cover-Image
 *****************/
-.post-url {
-  display: none;
-}
-
 .post-header {
   position: absolute;
   left: 50%;
@@ -103,6 +99,11 @@ Styles Cover-Image
   padding: $size-1;
 }
 
+//Adds visibility to side info when screen is bigger than tablet
 .info-visible {
   display: inherit;
+}
+//Helpers for Index to grab info about post for Disqus
+.post-url, .post-id {
+  display: none;
 }
