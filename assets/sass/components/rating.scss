@@ -1,0 +1,46 @@
+.rating-system {
+  height: 11em;
+  width: 15em;
+
+  @include phone() {
+    margin: auto;
+  }
+
+  ul {
+    list-style-type: none;
+    color: $black-main;
+    padding: 0;
+    li {
+      margin: $size-1 0;
+      margin-right: $size-1;
+
+      span {
+        display: inline-block;
+        height: 35px;
+        width: 35px;
+        margin-right: $size-1;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+.rating {
+  @include flexbox();
+  margin: auto;
+  justify-content: center;
+  margin: $size-1 0;
+
+  span {
+    height: 35px;
+    width: 35px;
+    margin: 0 $size-1;
+  }
+}
+
+.rating-active {
+  background: url("../images/RatingActive.svg") no-repeat;
+
+}
+.rating-inactive {
+  background: url("../images/Rating.svg") no-repeat;
+}

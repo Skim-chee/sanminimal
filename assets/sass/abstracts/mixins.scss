@@ -76,7 +76,7 @@ $tablet-width: 56rem;
 $desktop-width: 64rem;
 
 @mixin phone {
-  @media only screen and (min-width: #{$phone-width}) and (max-width: #{$tablet-width - .0625rem}) {
+  @media only screen and (min-width: 0px) and (max-width: #{$tablet-width - .0625rem}) {
     @content;
   }
 }
@@ -89,6 +89,12 @@ $desktop-width: 64rem;
 
 @mixin desktop {
   @media only screen and (min-width: #{$desktop-width}), only screen and (min-device-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media only screen and (min-width: 0px) and (max-width: #{$desktop-width  - 0.625rem}) {
     @content;
   }
 }

@@ -56,6 +56,7 @@ function offsets(){
 //Runs offsets() once cover-image is loaded
 $(".cover-image > img").one("load", function() {
   offsets();
+  $('p:empty').remove();
 }).each(function() {
   if(this.complete) $(this).load();
 });

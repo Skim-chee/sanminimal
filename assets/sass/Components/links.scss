@@ -16,10 +16,16 @@ Individual link stylizations
 }
 //For page navigation links
 .pagination a {
-  color: $gray-main;
+  color: $white-main;
+  background-color: $pink-main;
+  padding:0 15px;
+
+  &:hover {
+    color: $pink-main;
+    background-color: $black-main;
+  }
 }
 
-.pagination a:hover,
 .post-meta a:hover,
 .title-link h1:hover {
   color: $pink-main;

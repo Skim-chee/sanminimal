@@ -8,7 +8,7 @@ Styles Cover-Image
   width: 500px;
   @include flexbox();
   justify-content: center;
-  @include tablet {
+  @include small {
     width: 100%;
     left: auto;
     margin-left: auto;
