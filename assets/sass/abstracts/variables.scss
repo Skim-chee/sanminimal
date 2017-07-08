@@ -10,14 +10,18 @@ $gray-main: #BBBBBB;
 //Sakura-iro "Cherry Blossom"
 $pink-main: #FCC9B9;
 
+$modularscale: (
+  base: 1rem,
+  ratio: 1.618
+);
 // Font sizes - based on golden ratio
-$size-1: .597rem;
-$size-2: .966rem;
-//My favorite size <3
-$size-3: 1.5625rem;
-$size-4: 2.528rem;
-$size-5: 4.091rem;
-$size-6: 6.618rem;
+$size-0: ms(-1);
+$size-1: ms(0);
+$size-2: ms(1);
+$size-3: ms(2);
+$size-4: ms(3);
+$size-5: ms(4);
+$size-6: ms(5);
 
 // Font family
 $sans-serif: 'Lato', sans-serif;

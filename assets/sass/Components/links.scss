@@ -6,23 +6,20 @@ Individual link stylizations
 
 .post-link {
   display: inline-block;
-  margin-top: $size-1;
+  margin-top: $size-0;
 }
 //For tags
 .post-meta,
 .post-meta a {
-  margin: $size-3 0;
   color: $gray-main;
+  margin: $size-3 0;
 }
 //For page navigation links
 .pagination a {
-  color: $white-main;
-  background-color: $pink-main;
-  padding:0 15px;
+  color: $gray-main;
 
   &:hover {
     color: $pink-main;
-    background-color: $black-main;
   }
 }
 

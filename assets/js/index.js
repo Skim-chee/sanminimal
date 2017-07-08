@@ -1,33 +1,3 @@
-// // Hide Header on on scroll down
-// var didScroll;
-//
-// $(window).scroll(function(event){
-//     didScroll = true;
-// });
-//
-// setInterval(function() {
-//     if (didScroll) {
-//         hasScrolled();
-//         didScroll = false;
-//     }
-// }, 250);
-//
-// function hasScrolled() {
-//     // If they scrolled down and are past the navbar, add class .nav-up.
-//     // This is necessary so you never see what is "behind" the navbar.
-//     if ($(window).scrollTop() > 25) {
-//         // Scroll Down
-//         $('header.nav-down').removeClass('nav-down').addClass('nav-up');
-//     } else {
-//         // Scroll Up
-//
-//             $('header.nav-up').removeClass('nav-up').addClass('nav-down');
-//
-//     }
-// }
-
-
-
 //Sets up side bar info for date and publishing info for cover images, only works for tablets & desktops
 function offsets(){
   if ($(window).width() > 920){
@@ -36,16 +6,16 @@ function offsets(){
 
         var coveroff = $('.cover-image').offset();
         $('.issue-info').offset({
-            top : coveroff.top + 226,
+            top : coveroff.top + 122,
             left :  coveroff.left + 840
         });
         $('.issue-number').offset({
-            top : coveroff.top + 100,
+            top : coveroff.top - 33,
             left :  coveroff.left + 670
         });
         $('.publication-info').offset({
             top : coveroff.top + $('.cover-image').outerHeight(true) - 150,
-            left :  coveroff.left - 15
+            left :  coveroff.left - 16
         });
   } else {
     $('.issue-info, .issue-number, .publication-info').removeClass('info-visible');

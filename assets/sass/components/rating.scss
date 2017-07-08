@@ -1,7 +1,4 @@
 .rating-system {
-  height: 11em;
-  width: 15em;
-
   @include phone() {
     margin: auto;
   }
@@ -11,29 +8,28 @@
     color: $black-main;
     padding: 0;
     li {
-      margin: $size-1 0;
-      margin-right: $size-1;
+      margin: $size-0 0;
+      margin-right: $size-0;
+      @include font($size-1, 300);
 
       span {
         display: inline-block;
         height: 35px;
         width: 35px;
-        margin-right: $size-1;
+        margin-right: $size-0;
         vertical-align: middle;
       }
     }
   }
 }
 .rating {
-  @include flexbox();
-  margin: auto;
-  justify-content: center;
-  margin: $size-1 0;
+  @include center-text();
+  margin-bottom: $size-5;
 
   span {
     height: 35px;
     width: 35px;
-    margin: 0 $size-1;
+    margin: 0 $size-0;
   }
 }
 

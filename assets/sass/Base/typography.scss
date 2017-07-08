@@ -1,18 +1,19 @@
-/************************
-* Sets Typography Scale *
-************************/
+/**
+ * Base Typography classes, fit to how ghost editor works
+ * Ghost creates <p> block for every content block
+ * Manually have to add <h#> tags and <a> tags when appropriate
+ */
 
-//Use
-/*
-h3 {
-  font-size: ms(3);
+//typography presets
+@mixin font($size, $weight:300, $type:$sans-serif) {
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $type;
 }
-*/
-
-$modularscale: (
-  base: 1em, // Change as necessary, use link to choose
-  ratio: 1.5 // http://www.modularscale.com/?1&em&1.618&web&text
-);
+@mixin center-text() {
+  @include flexbox();
+  justify-content: center;
+}
 
 ::selection {
   color: $white;
@@ -20,8 +21,7 @@ $modularscale: (
 }
 
 p {
-  font-size: $size-2;
-  font-weight: 300;
+  @include font($size-2);
   line-height: $size-3;
   //Sets Margin between every element in a post
   margin: $size-4 0;
@@ -36,25 +36,25 @@ h3 {
 }
 
 h1 {
-  font-family: $serif;
-  font-size: $size-5;
-  font-weight: 900;
-  display: flex;
-  margin-top: $size-4;
-  justify-content: center;
-  @include phone {
-    text-align: center;
-    font-size: $size-4;
+  a {
+    @include font($size-4, 900, $serif);
+    @include center-text();
+
+    margin-top: $size-5;
+
+    @include phone {
+      text-align: center;
+      font-size: $size-3;
+    }
   }
 }
 
 h2 {
+  @include font($size-2);
+  @include center-text();
+
   margin: $size-1 0;
-  font-size: $size-2;
-  font-weight: 300;
-  display: flex;
   color: $gray-main;
-  justify-content: center;
 
   a {
     font-weight: 300;
@@ -62,18 +62,6 @@ h2 {
   }
 }
 
-h3 {
-  font-size: $size-4;
-  font-weight: 700;
-}
-
-h4 {
-  font-size: $size-4;
-}
-h5 {
-  font-size: $size-5;
-  font-weight: 900;
-}
 h6 {
   font-size: $size-2;
   font-weight: 300;
@@ -84,8 +72,8 @@ h6 {
 }
 
 a {
-  font-size: $size-2;
-  font-weight: 400;
+  font-size: $size-1;
+  font-weight: 300;
   color: $black-main;
   // Hovor effect of links
   &:hover {
