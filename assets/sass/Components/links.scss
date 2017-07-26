@@ -1,7 +1,13 @@
 /**************
 Individual link stylizations
 ***************/
-
+.nav a {
+  font-size: $size-1;
+  color: $black-main;
+  &:hover {
+    color:$pink-main;
+  }
+}
 //general links
 
 .post-link {
@@ -11,19 +17,19 @@ Individual link stylizations
 //For tags
 .post-meta,
 .post-meta a {
+  font-size: $size-1;
   color: $gray-main;
-  margin: $size-3 0;
-}
-//For page navigation links
-.pagination a {
-  color: $gray-main;
-
-  &:hover {
-    color: $pink-main;
-  }
+  margin: 32px 0;
 }
 
 .post-meta a:hover,
 .title-link h1:hover {
   color: $pink-main;
+}
+
+.portfolio-list a{
+  color: $black-main;
+  &:hover {
+    color:$white-main;
+  }
 }

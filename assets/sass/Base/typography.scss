@@ -24,7 +24,7 @@ p {
   @include font($size-2);
   line-height: $size-3;
   //Sets Margin between every element in a post
-  margin: $size-4 0;
+  margin: 48px 0;
   color: $black-main;
 }
 
@@ -40,7 +40,7 @@ h1 {
     @include font($size-4, 900, $serif);
     @include center-text();
 
-    margin-top: $size-5;
+    margin-top: 64px;
 
     @include phone {
       text-align: center;
@@ -53,7 +53,7 @@ h2 {
   @include font($size-2);
   @include center-text();
 
-  margin: $size-1 0;
+  margin: 8px 0;
   color: $gray-main;
 
   a {
@@ -72,9 +72,9 @@ h6 {
 }
 
 a {
-  font-size: $size-1;
+  font-size: $size-2;
   font-weight: 300;
-  color: $black-main;
+  color: $gray-main;
   // Hovor effect of links
   &:hover {
     color: $pink-main;
