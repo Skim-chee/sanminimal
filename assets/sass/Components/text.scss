@@ -3,6 +3,8 @@ Text components
 ********************/
 .post {
   p {
+    font-family: $serif-body;
+    line-height: $size-2*1.4;
     column-count: 2;
     @include phone() {
       column-count: 1;

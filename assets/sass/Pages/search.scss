@@ -1,5 +1,17 @@
 .search-form {
   margin-top: 15px;
+  @include flexbox();
+  flex-direction: column;
+  form {
+    width: 100%;
+    @include flexbox();
+  }
+  img {
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+    color: $pink-main;
+  }
 }
 
 .search-field {
@@ -8,22 +20,21 @@
 
 input[type='text'] {
   font-family: 'Lato', sans-serif;
-  font-size: $size-1;
+  font-size: $size-2;
   font-weight: normal;
   font-weight: 300;
-  position: absolute;
   width: 150px;
-  height: 22px;
   color: $black-main;
   border: none;
   border-bottom: 1px solid transparent;
   outline: none;
+  height: 24px;
 
   @include transition(.3s ease);
 }
 
 input[type='text']:focus {
-  width: 375px;
+  width: 85%;
   border-bottom: 1px solid $black-main;
 }
 

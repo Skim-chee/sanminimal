@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,900|Playfair+Display:400,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,900|Playfair+Display:400,700,700i,900,900i|Crimson+Text');
 
 //Main Color
 $white: #FFFFFF;
@@ -14,6 +14,8 @@ $modularscale: (
   base: 1rem,
   ratio: 1.618
 );
+
+$base-padding: 8px; 
 // Font sizes - based on golden ratio
 $size-0: ms(-1);
 $size-1: ms(0);
@@ -25,4 +27,5 @@ $size-6: ms(5);
 
 // Font family
 $sans-serif: 'Lato', sans-serif;
+$serif-body: 'Crimson Text', serif;
 $serif: 'Playfair Display', serif;

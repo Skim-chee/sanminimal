@@ -8,7 +8,10 @@ body {
 }
 
 .center-container {
-  width: 450px;
+  width: 672px;
+  @include phone {
+    width: 90%;
+  }
 }
 
 img {

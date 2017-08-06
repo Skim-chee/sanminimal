@@ -53,6 +53,17 @@
           column-span: all;
 }
 
+@mixin margin-vertical($multi) {
+  margin-top: $base-padding * $multi;
+  margin-bottom: $base-padding * $multi;
+}
+@mixin margin-horizontal($multi) {
+  margin-left: $base-padding * $multi;
+  margin-right: $base-padding * $multi;
+}
+@mixin margin-dir($dir, $multi) {
+  margin-#{$dir}: $base-padding * $multi;
+}
 
 /************************
 * Screen                  *
