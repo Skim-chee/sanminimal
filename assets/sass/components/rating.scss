@@ -10,12 +10,12 @@
     li {
       margin: $size-0 0;
       margin-right: $size-0;
-      @include font($size-1, 300);
+      @include font($size-2, 300, $serif-body);
 
       span {
         display: inline-block;
-        height: 35px;
-        width: 35px;
+        height: 40px;
+        width: 40px;
         margin-right: $size-0;
         vertical-align: middle;
       }
@@ -24,11 +24,11 @@
 }
 .rating {
   @include center-text();
-  margin-bottom: $size-5;
+  @include margin-dir(bottom, 8);
 
   span {
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
     margin: 0 $size-0;
   }
 }

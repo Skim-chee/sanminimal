@@ -2,7 +2,7 @@
 Individual link stylizations
 ***************/
 .nav a {
-  font-size: $size-1;
+  @include font($size-1, 300, $sans-serif);
   color: $black-main;
   &:hover {
     color:$pink-main;
@@ -17,9 +17,9 @@ Individual link stylizations
 //For tags
 .post-meta,
 .post-meta a {
-  font-size: $size-1;
+  @include font($size-2, 100, $serif-body);
   color: $gray-main;
-  margin: 32px 0;
+  @include margin-vertical(6);
 }
 
 .post-meta a:hover,

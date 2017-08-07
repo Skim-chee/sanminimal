@@ -56,13 +56,15 @@
 Pagination Navigation
 ********************/
 .pagination {
-  height: 72px;
-  margin: 32px 0;
+  height: 80px;
+  line-height: 80px;
+  @include margin-vertical(6);
   border-top: 1px solid $gray-main;
   border-bottom: 1px solid $gray-main;
-  line-height: 73px;
 }
-
+.pagination-arrow {
+  font-family: $sans-serif;
+}
 .older-posts {
   float: right;
 }

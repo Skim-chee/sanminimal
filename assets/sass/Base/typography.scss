@@ -37,10 +37,13 @@ h3 {
 
 h1 {
   a {
-    @include font($size-4, 900, $serif);
+    @include font($size-5, 900, $serif);
     @include center-text();
+    color: $black-main;
 
-    margin-top: 64px;
+    @include margin-dir(top, 8);
+    @include margin-dir(bottom, 4);
+
 
     @include phone {
       text-align: center;
@@ -72,8 +75,7 @@ h6 {
 }
 
 a {
-  font-family: $sans-serif;
-  font-size: $size-2;
+  @include font($size-2, 300, $serif-body);
   font-weight: 300;
   color: $gray-main;
   // Hovor effect of links

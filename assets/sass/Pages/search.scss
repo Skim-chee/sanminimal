@@ -19,10 +19,7 @@
 }
 
 input[type='text'] {
-  font-family: 'Lato', sans-serif;
-  font-size: $size-2;
-  font-weight: normal;
-  font-weight: 300;
+  @include font($size-2, 300, $sans-serif);
   width: 150px;
   color: $black-main;
   border: none;

@@ -1,10 +1,10 @@
 <nav class="pagination" role="navigation">
     <div class = "container">
         {{#if prev}}
-            <a class="newer-posts" href="{{page_url prev}}">&larr; Newer Posts</a>
+            <a class="newer-posts" href="{{page_url prev}}"><span class = "pagination-arrow">&larr;</span> Newer Posts</a>
         {{/if}}
         {{#if next}}
-            <a class="older-posts" href="{{page_url next}}">Older Posts &rarr;</a>
+            <a class="older-posts" href="{{page_url next}}">Older Posts <span class = "pagination-arrow">&rarr;</span></a>
         {{/if}}
     </div>
 </nav>
