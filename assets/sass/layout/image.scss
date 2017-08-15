@@ -5,3 +5,13 @@ p > img {
     max-width: 100%;
   }
 }
+
+.horizontal > p > img {
+  width: 100vw;
+  @include release();
+
+  @include phone {
+    max-width: 100%;
+    margin-left: auto;
+  }
+}

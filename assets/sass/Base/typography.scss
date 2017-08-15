@@ -24,7 +24,7 @@ p {
   @include font($size-2);
   line-height: $size-3;
   //Sets Margin between every element in a post
-  @include margin-vertical(6);
+  @include margin-vertical(8);
   color: $black-main;
 }
 
@@ -63,6 +63,15 @@ h2 {
     font-weight: 300;
     color: $gray-main;
   }
+}
+
+h3 {
+  @include font($size-1, 300, $serif-body);
+  color: $gray-main;
+  @include center-text();
+  @include margin-dir(top, -6);
+  @include margin-dir(bottom, -4);
+
 }
 
 h6 {
