@@ -71,6 +71,7 @@ h3 {
   @include center-text();
   @include margin-dir(top, -6);
   @include margin-dir(bottom, -4);
+  text-align: center;
 
 }
 
