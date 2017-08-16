@@ -17,7 +17,7 @@ Individual link stylizations
 //For tags
 .post-meta,
 .post-meta a {
-  @include font($size-2, 100, $serif-body);
+  @include font($size-2, 100, $serif);
   color: $gray-main;
   @include margin-vertical(6);
 }

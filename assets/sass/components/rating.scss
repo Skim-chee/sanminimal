@@ -10,7 +10,7 @@
     li {
       margin: $size-0 0;
       margin-right: $size-0;
-      @include font($size-2, 300, $serif-body);
+      @include font($size-2, 300, $serif);
 
       span {
         display: inline-block;

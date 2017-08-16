@@ -36,14 +36,22 @@ h3 {
 }
 
 h1 {
-  a {
-    @include font($size-5, 900, $serif);
+  @include font($size-5, 900, $serif-header);
+  @include center-text();
+  color: $black-main;
+
+  @include margin-dir(top, 8);
+  @include margin-dir(bottom, 3);
+
+
+  @include phone {
+    text-align: center;
+    font-size: $size-3;
+  }
+  a{
+    @include font($size-5, 900, $serif-header);
     @include center-text();
     color: $black-main;
-
-    @include margin-dir(top, 8);
-    @include margin-dir(bottom, 4);
-
 
     @include phone {
       text-align: center;
@@ -53,10 +61,10 @@ h1 {
 }
 
 h2 {
-  @include font($size-2);
+  @include font($size-2, 300, $serif);
   @include center-text();
 
-  margin: 8px 0;
+  @include margin-vertical(1);
   color: $gray-main;
 
   a {
@@ -66,7 +74,7 @@ h2 {
 }
 
 h3 {
-  @include font($size-1, 300, $serif-body);
+  @include font($size-1, 300, $serif);
   color: $gray-main;
   @include center-text();
   @include margin-dir(top, -6);
@@ -85,7 +93,7 @@ h6 {
 }
 
 a {
-  @include font($size-2, 300, $serif-body);
+  @include font($size-2, 300, $serif);
   font-weight: 300;
   color: $gray-main;
   // Hovor effect of links
