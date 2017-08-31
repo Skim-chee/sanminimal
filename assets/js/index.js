@@ -22,15 +22,6 @@ function offsets(){
   }
 }
 
-
-//Runs offsets() once cover-image is loaded
-$(".cover-image > img").one("load", function() {
-  offsets();
-  $('p:empty').remove();
-}).each(function() {
-  if(this.complete) $(this).load();
-});
-
 //Continually adjusts to cover image as it moves around as window is resized
 $(document).ready(function() {
   $(window).resize(function() {
@@ -64,6 +55,8 @@ $(document).ready(function(){
     img.removeAttribute('data-src');
   };
 });
+
+// Waits for lazy load to finish and then offsets
 
 function waitForElementToDisplay(selector, time) {
   if(document.querySelector(selector)!=null) {
