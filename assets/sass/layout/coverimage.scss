@@ -2,6 +2,7 @@
 Styles Cover-Image
 *****************/
 .post-header {
+  z-index: 1;
   position: absolute;
   left: 50%;
   margin-left: -250px;
@@ -40,6 +41,7 @@ Styles Cover-Image
 .issue-info,
 .issue-number,
 .publication-info {
+  z-index: 1;
   display: none;
   position: absolute;
   -webkit-user-select: none;

@@ -15,3 +15,17 @@ p > img {
     margin-left: auto;
   }
 }
+
+img {
+  opacity: 1;
+  transition: opacity 0.3s;
+  -webkit-backface-visibility: hidden;
+  z-index: 0;
+}
+
+img[data-src] {
+  height: 1160px;
+  width: 896;
+  opacity: 0;
+
+}
