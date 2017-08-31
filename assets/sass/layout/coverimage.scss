@@ -66,12 +66,12 @@ Styles Cover-Image
 }
 
 .issue-info {
-  @include font($size-2);
+  @include font($size-2, 300, $sans-serif);
   letter-spacing: 4px;
   width: 300px;
 
   .issue-no {
-    @include font($size-3, 600);
+    @include font($size-3, 600, $sans-serif);
     display: inline;
   }
 }
@@ -82,7 +82,7 @@ Styles Cover-Image
   width: 175px;
 
   h5 {
-    @include font($size-5, 400);
+    @include font($size-5, 400, $sans-serif);
     float: right;
   }
 }
@@ -92,7 +92,7 @@ Styles Cover-Image
 }
 
 .publication-info {
-  @include font($size-0);
+  @include font($size-0, 300, $sans-serif);
   letter-spacing: 2px;
   color: $white-main;
   background-color: $pink-main;

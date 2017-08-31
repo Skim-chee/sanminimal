@@ -30,6 +30,7 @@ $(".cover-image > img").one("load", function() {
 }).each(function() {
   if(this.complete) $(this).load();
 });
+
 //Continually adjusts to cover image as it moves around as window is resized
 $(document).ready(function() {
   $(window).resize(function() {
@@ -63,3 +64,17 @@ $(document).ready(function(){
     img.removeAttribute('data-src');
   };
 });
+
+function waitForElementToDisplay(selector, time) {
+  if(document.querySelector(selector)!=null) {
+        offsets();
+        return;
+  }
+  else {
+      setTimeout(function() {
+      waitForElementToDisplay(selector, time);
+    }, time);
+  }
+}
+
+waitForElementToDisplay(".cover-image > img[src]:not([data-src])", 1);
