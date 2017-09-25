@@ -1,6 +1,7 @@
 {
   "name": "sanminimal",
-  "version": "2.6.2",
+  "version": "2.6.5",
   "author": "Seean Kim",
-  "author_email": "sanminimal@gmail.com"
+  "author": {"email": "sanminimal@gmail.com"},
+  "config": {"posts_per_page": 1}
 }
