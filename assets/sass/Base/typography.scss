@@ -37,11 +37,11 @@ h3 {
 
 h1 {
   @include font($size-5, 900, $serif-header);
-  @include center-text();
+  text-align: center;
   color: $black-main;
 
   @include margin-dir(top, 8);
-  @include margin-dir(bottom, 3);
+  @include margin-dir(bottom, 4);
 
 
   @include phone {
@@ -50,11 +50,9 @@ h1 {
   }
   a{
     @include font($size-5, 900, $serif-header);
-    @include center-text();
     color: $black-main;
 
     @include phone {
-      text-align: center;
       font-size: $size-3;
     }
   }
@@ -64,7 +62,7 @@ h2 {
   @include font($size-2, 300, $serif);
   @include center-text();
 
-  @include margin-vertical(1);
+  @include margin-vertical(2);
   color: $gray-main;
 
   a {
