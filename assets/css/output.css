@@ -424,6 +424,9 @@ template {
 * 		  90% { opacity : 0; }            *
 * 		}                                 *
 ****************************************/
+html {
+  font-size: 75%; }
+
 body {
   background-color: #FEFEFE; }
 
@@ -1010,7 +1013,8 @@ input[type='text']:focus {
       font-weight: 900;
       font-family: "Lato", sans-serif;
       letter-spacing: 2px;
-      line-height: 100px; }
+      line-height: 100px;
+      display: block; }
       @media only screen and (min-width: 0px) and (max-width: 55.9375rem) {
         .portfolio-list li a {
           margin-left: 16px;
