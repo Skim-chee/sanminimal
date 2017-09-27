@@ -10,8 +10,5 @@
   "scripts": {
     "build-css": "node-sass --include-path scss assets/sass/input.scss   assets/css/output.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
-  },
-  "devDependencies": {
-    "node-sass": "^4.5.3"
   }
 }
