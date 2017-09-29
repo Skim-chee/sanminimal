@@ -22,8 +22,7 @@ footer {
   }
 
   .copyright {
-    font-size: $size-1;
-    font-weight: 300;
+    @include font($size-1, 300, $serif);
     margin: 24px 0;
   }
 }

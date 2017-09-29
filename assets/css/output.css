@@ -787,6 +787,7 @@ footer section {
 footer .copyright {
   font-size: 1rem;
   font-weight: 300;
+  font-family: "Crimson Text", serif;
   margin: 24px 0; }
 
 /********************
@@ -1003,10 +1004,13 @@ input[type='text']:focus {
   list-style: none; }
   .portfolio-list li {
     width: 100%;
-    height: 100px;
+    height: 104px;
     border-bottom: 2px solid #333333;
     transform: translateY(0px);
     transition: all .3s ease; }
+    @media only screen and (min-width: 0px) and (max-width: 55.9375rem) {
+      .portfolio-list li {
+        height: 80px; } }
     .portfolio-list li a {
       margin-left: 24px;
       font-size: 2.61792rem;
@@ -1033,8 +1037,11 @@ input[type='text']:focus {
         display: none; } }
   .portfolio-list span {
     float: right;
-    clear: both;
+    margin-right: 16px;
     font-weight: 300; }
+
+.portfolio-item {
+  position: relative; }
 
 .dropdown {
   width: 300px;
@@ -1046,14 +1053,17 @@ input[type='text']:focus {
   display: flex;
   flex-direction: column;
   visibility: hidden;
+  opacity: 0;
   position: absolute;
-  transform: translateX(100%);
+  transform: translateX(198.675%);
   margin-top: -3px;
   box-shadow: 0 3px 3px #BBBBBB;
-  opacity: 0;
   background-color: #FCC9B9;
   text-align: center;
   transition: visibility 0s, opacity 0.3s ease; }
+  @media only screen and (min-width: 0px) and (max-width: 55.9375rem) {
+    .dropdown {
+      display: none; } }
   .dropdown h2 {
     color: #FEFEFE; }
 
